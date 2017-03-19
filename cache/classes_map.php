@@ -32,6 +32,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\html_table']->classname = 'html_table';
   cache::$data['classes_map']['effectivecore\html_table']->parents['html'] = 'html';
   cache::$data['classes_map']['effectivecore\html_table']->file = 'modules/core/classes/class--html_table.php';
+  cache::$data['classes_map']['effectivecore\markup'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\markup']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\markup']->classname = 'markup';
+  cache::$data['classes_map']['effectivecore\markup']->parents = [];
+  cache::$data['classes_map']['effectivecore\markup']->file = 'modules/core/classes/class--markup.php';
   cache::$data['classes_map']['effectivecore\template'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\template']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\template']->classname = 'template';
@@ -107,6 +112,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\data\events']->classname = 'events';
   cache::$data['classes_map']['effectivecore\modules\data\events']->parents['effectivecore\events'] = 'effectivecore\\events';
   cache::$data['classes_map']['effectivecore\modules\data\events']->file = 'modules/data/classes/class_abstract--events.php';
+  cache::$data['classes_map']['effectivecore\modules\demo\events'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\modules\demo\events']->namespace = 'effectivecore\\modules\\demo';
+  cache::$data['classes_map']['effectivecore\modules\demo\events']->classname = 'events';
+  cache::$data['classes_map']['effectivecore\modules\demo\events']->parents['effectivecore\events'] = 'effectivecore\\events';
+  cache::$data['classes_map']['effectivecore\modules\demo\events']->file = 'modules/demo/classes/class_abstract--events.php';
   cache::$data['classes_map']['effectivecore\modules\menu\menu_item'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\modules\menu\menu_item']->namespace = 'effectivecore\\modules\\menu';
   cache::$data['classes_map']['effectivecore\modules\menu\menu_item']->classname = 'menu_item';
