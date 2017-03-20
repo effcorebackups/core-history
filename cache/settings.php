@@ -178,11 +178,11 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['core']['page_front']->url->match = '%^/$%';
   settings::$data['pages']['core']['page_front']->content['block_wellcome'] = new \stdClass();
   settings::$data['pages']['core']['page_front']->content['block_wellcome']->type = 'text';
-  settings::$data['pages']['core']['page_front']->content['block_wellcome']->value = 'Wellcome to our site!';
+  settings::$data['pages']['core']['page_front']->content['block_wellcome']->content = 'Wellcome to our site!';
   settings::$data['pages']['core']['page_front']->content['block_wellcome']->region = 'content';
   settings::$data['pages']['core']['page_front']->content['block_copyright'] = new \stdClass();
   settings::$data['pages']['core']['page_front']->content['block_copyright']->type = 'text';
-  settings::$data['pages']['core']['page_front']->content['block_copyright']->value = 'Copyright © 2017 RysMax';
+  settings::$data['pages']['core']['page_front']->content['block_copyright']->content = 'Copyright © 2017 RysMax';
   settings::$data['pages']['core']['page_front']->content['block_copyright']->region = 'footer';
   settings::$data['pages']['core']['page_install'] = new \stdClass();
   settings::$data['pages']['core']['page_install']->title = 'Installation page';
