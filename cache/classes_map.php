@@ -72,6 +72,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\factory']->classname = 'factory';
   cache::$data['classes_map']['effectivecore\factory']->parents = [];
   cache::$data['classes_map']['effectivecore\factory']->file = 'modules/core/classes/class_abstract--factory.php';
+  cache::$data['classes_map']['effectivecore\form'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\form']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\form']->classname = 'form';
+  cache::$data['classes_map']['effectivecore\form']->parents = [];
+  cache::$data['classes_map']['effectivecore\form']->file = 'modules/core/classes/class_abstract--form.php';
   cache::$data['classes_map']['effectivecore\message'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\message']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\message']->classname = 'message';
