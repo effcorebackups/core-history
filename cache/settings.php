@@ -445,6 +445,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->content['field_password']->properties->placeholder = 'Password';
   settings::$data['forms']['user']['form_user_login']->content['field_password']->properties->required = '1';
   settings::$data['forms']['user']['form_user_login']->content['field_password']->properties->minlength = '5';
+  settings::$data['forms']['user']['form_user_login']->content['field_password']->properties->maxlength = '255';
   settings::$data['forms']['user']['form_user_login']->content['field_password']->content = null;
   settings::$data['forms']['user']['form_user_login']->content['button_login'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_login']->content['button_login']->type = 'input';
@@ -502,6 +503,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->content['field_password']->properties->placeholder = 'Password';
   settings::$data['forms']['user']['form_user_n_edit']->content['field_password']->properties->required = '1';
   settings::$data['forms']['user']['form_user_n_edit']->content['field_password']->properties->minlength = '5';
+  settings::$data['forms']['user']['form_user_n_edit']->content['field_password']->properties->maxlength = '255';
   settings::$data['forms']['user']['form_user_n_edit']->content['field_password']->content = null;
   settings::$data['forms']['user']['form_user_n_edit']->content['button_login'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_n_edit']->content['button_login']->type = 'input';
@@ -534,6 +536,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->content['field_password']->properties->placeholder = 'Password';
   settings::$data['forms']['user']['form_user_register']->content['field_password']->properties->required = '1';
   settings::$data['forms']['user']['form_user_register']->content['field_password']->properties->minlength = '5';
+  settings::$data['forms']['user']['form_user_register']->content['field_password']->properties->maxlength = '255';
   settings::$data['forms']['user']['form_user_register']->content['field_password']->content = null;
   settings::$data['forms']['user']['form_user_register']->content['button_register'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_register']->content['button_register']->type = 'input';
