@@ -47,11 +47,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\factory']->classname = 'factory';
   cache::$data['classes_map']['effectivecore\factory']->parents = [];
   cache::$data['classes_map']['effectivecore\factory']->file = 'modules/core/classes/abstract--factory.php';
-  cache::$data['classes_map']['effectivecore\__message'] = new \stdClass();
-  cache::$data['classes_map']['effectivecore\__message']->namespace = 'effectivecore';
-  cache::$data['classes_map']['effectivecore\__message']->classname = '__message';
-  cache::$data['classes_map']['effectivecore\__message']->parents = [];
-  cache::$data['classes_map']['effectivecore\__message']->file = 'modules/core/classes/abstract--message.php';
+  cache::$data['classes_map']['effectivecore\messages'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\messages']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\messages']->classname = 'messages';
+  cache::$data['classes_map']['effectivecore\messages']->parents = [];
+  cache::$data['classes_map']['effectivecore\messages']->file = 'modules/core/classes/abstract--messages.php';
   cache::$data['classes_map']['effectivecore\parser'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\parser']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\parser']->classname = 'parser';
