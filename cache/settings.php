@@ -130,7 +130,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['data']->is_embed = '1';
   settings::$data['module']['data']->is_always_on = '1';
   settings::$data['module']['data']->on_init = new \stdClass();
-  settings::$data['module']['data']->on_init->handler = '\\effectivecore\\modules\\data\\events::on_init';
+  settings::$data['module']['data']->on_init->handler = '\\effectivecore\\modules\\data\\events_module::on_init';
   settings::$data['module']['data']->on_init->weight = '-90';
   settings::$data['module']['demo'] = new \stdClass();
   settings::$data['module']['demo']->id = 'demo';
@@ -157,7 +157,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['page']->is_embed = '1';
   settings::$data['module']['page']->is_always_on = '1';
   settings::$data['module']['page']->on_init = new \stdClass();
-  settings::$data['module']['page']->on_init->handler = '\\effectivecore\\modules\\page\\events::on_init';
+  settings::$data['module']['page']->on_init->handler = '\\effectivecore\\modules\\page\\events_module::on_init';
   settings::$data['module']['page']->on_init->weight = '0';
   settings::$data['module']['user'] = new \stdClass();
   settings::$data['module']['user']->id = 'user';
@@ -168,10 +168,10 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['user']->is_embed = '1';
   settings::$data['module']['user']->is_always_on = '1';
   settings::$data['module']['user']->on_init = new \stdClass();
-  settings::$data['module']['user']->on_init->handler = '\\effectivecore\\modules\\user\\events::on_init';
+  settings::$data['module']['user']->on_init->handler = '\\effectivecore\\modules\\user\\events_module::on_init';
   settings::$data['module']['user']->on_init->weight = '-80';
   settings::$data['module']['user']->on_install = new \stdClass();
-  settings::$data['module']['user']->on_install->handler = '\\effectivecore\\modules\\user\\events::on_install';
+  settings::$data['module']['user']->on_install->handler = '\\effectivecore\\modules\\user\\events_module::on_install';
   settings::$data['pages']['core']['page_front'] = new \stdClass();
   settings::$data['pages']['core']['page_front']->title = 'Front page';
   settings::$data['pages']['core']['page_front']->url = new \stdClass();
