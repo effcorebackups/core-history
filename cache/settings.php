@@ -368,7 +368,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['db']['data']->test->username = 'root';
   settings::$data['db']['data']->test->password = '123';
   settings::$data['db']['data']->test->table_prefix = 'ec_';
-  settings::$data['forms']['demo']['form_demo'] = new \effectivecore\form_n();
+  settings::$data['forms']['demo']['form_demo'] = new \effectivecore\form();
   settings::$data['forms']['demo']['form_demo']->page_args = [];
   settings::$data['forms']['demo']['form_demo']->form_args = [];
   settings::$data['forms']['demo']['form_demo']->post_args = [];
@@ -396,7 +396,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['demo']['form_demo']->content['button_login']->properties->value = 'Ok';
   settings::$data['forms']['demo']['form_demo']->content['button_login']->content = null;
   settings::$data['forms']['demo']['form_demo']->errors = [];
-  settings::$data['forms']['user']['form_user_login'] = new \effectivecore\form_n();
+  settings::$data['forms']['user']['form_user_login'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_login']->page_args = [];
   settings::$data['forms']['user']['form_user_login']->form_args = [];
   settings::$data['forms']['user']['form_user_login']->post_args = [];
@@ -434,7 +434,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->content['button_login']->properties->value = 'Login';
   settings::$data['forms']['user']['form_user_login']->content['button_login']->content = null;
   settings::$data['forms']['user']['form_user_login']->errors = [];
-  settings::$data['forms']['user']['form_user_n_delete'] = new \effectivecore\form_n();
+  settings::$data['forms']['user']['form_user_n_delete'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_n_delete']->page_args = [];
   settings::$data['forms']['user']['form_user_n_delete']->form_args = [];
   settings::$data['forms']['user']['form_user_n_delete']->post_args = [];
@@ -459,7 +459,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->content['button_cancel']->properties->value = 'Cancel';
   settings::$data['forms']['user']['form_user_n_delete']->content['button_cancel']->content = null;
   settings::$data['forms']['user']['form_user_n_delete']->errors = [];
-  settings::$data['forms']['user']['form_user_n_edit'] = new \effectivecore\form_n();
+  settings::$data['forms']['user']['form_user_n_edit'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_n_edit']->page_args = [];
   settings::$data['forms']['user']['form_user_n_edit']->form_args = [];
   settings::$data['forms']['user']['form_user_n_edit']->post_args = [];
@@ -488,7 +488,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->content['button_login']->properties->value = 'Save';
   settings::$data['forms']['user']['form_user_n_edit']->content['button_login']->content = null;
   settings::$data['forms']['user']['form_user_n_edit']->errors = [];
-  settings::$data['forms']['user']['form_user_register'] = new \effectivecore\form_n();
+  settings::$data['forms']['user']['form_user_register'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_register']->page_args = [];
   settings::$data['forms']['user']['form_user_register']->form_args = [];
   settings::$data['forms']['user']['form_user_register']->post_args = [];
