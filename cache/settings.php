@@ -200,7 +200,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['core']['page_modules']->access->roles['admins'] = 'admins';
   settings::$data['pages']['core']['page_modules']->content['block_modules'] = new \stdClass();
   settings::$data['pages']['core']['page_modules']->content['block_modules']->type = 'code';
-  settings::$data['pages']['core']['page_modules']->content['block_modules']->handler = '\\effectivecore\\events::on_page_modules';
+  settings::$data['pages']['core']['page_modules']->content['block_modules']->handler = '\\effectivecore\\events_page::on_show_modules';
   settings::$data['pages']['core']['page_modules']->content['block_modules']->region = 'content';
   settings::$data['pages']['demo']['page_demo'] = new \stdClass();
   settings::$data['pages']['demo']['page_demo']->title = 'Demonstration';
