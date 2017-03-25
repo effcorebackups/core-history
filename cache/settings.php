@@ -404,6 +404,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->properties = new \stdClass();
   settings::$data['forms']['user']['form_user_login']->properties->novalidate = '1';
   settings::$data['forms']['user']['form_user_login']->properties->method = 'post';
+  settings::$data['forms']['user']['form_user_login']->properties->class = 'form-user';
   settings::$data['forms']['user']['form_user_login']->on_submit = new \stdClass();
   settings::$data['forms']['user']['form_user_login']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_login';
   settings::$data['forms']['user']['form_user_login']->on_validate = null;
@@ -441,6 +442,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->id = 'user_n_delete';
   settings::$data['forms']['user']['form_user_n_delete']->properties = new \stdClass();
   settings::$data['forms']['user']['form_user_n_delete']->properties->method = 'post';
+  settings::$data['forms']['user']['form_user_n_delete']->properties->class = 'form-user';
   settings::$data['forms']['user']['form_user_n_delete']->on_submit = new \stdClass();
   settings::$data['forms']['user']['form_user_n_delete']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_n_delete';
   settings::$data['forms']['user']['form_user_n_delete']->on_validate = null;
@@ -467,6 +469,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->properties = new \stdClass();
   settings::$data['forms']['user']['form_user_n_edit']->properties->novalidate = '1';
   settings::$data['forms']['user']['form_user_n_edit']->properties->method = 'post';
+  settings::$data['forms']['user']['form_user_n_edit']->properties->class = 'form-user';
   settings::$data['forms']['user']['form_user_n_edit']->on_submit = new \stdClass();
   settings::$data['forms']['user']['form_user_n_edit']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_n_edit';
   settings::$data['forms']['user']['form_user_n_edit']->on_validate = null;
@@ -496,6 +499,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->properties = new \stdClass();
   settings::$data['forms']['user']['form_user_register']->properties->novalidate = '1';
   settings::$data['forms']['user']['form_user_register']->properties->method = 'post';
+  settings::$data['forms']['user']['form_user_register']->properties->class = 'form-user';
   settings::$data['forms']['user']['form_user_register']->on_submit = new \stdClass();
   settings::$data['forms']['user']['form_user_register']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_register';
   settings::$data['forms']['user']['form_user_register']->on_validate = null;
