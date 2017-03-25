@@ -283,9 +283,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_admin_users_delete_n']->url->args['user_id'] = '4';
   settings::$data['pages']['user']['page_admin_users_delete_n']->access = new \stdClass();
   settings::$data['pages']['user']['page_admin_users_delete_n']->access->roles['admins'] = 'admins';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete'] = new \stdClass();
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->type = 'code';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->handler = '\\effectivecore\\modules\\user\\events::on_page_admin_users_delete_n';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->region = 'content';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete'] = new \stdClass();
-  settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->type = 'code';
-  settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->handler = '\\effectivecore\\modules\\user\\events::on_page_admin_users_delete_n';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->type = 'link';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->entity = 'forms/user/form_user_n_delete';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->region = 'content';
   settings::$data['pages']['user']['page_user_login'] = new \stdClass();
   settings::$data['pages']['user']['page_user_login']->title = 'Login';
