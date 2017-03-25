@@ -245,7 +245,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['menu']['page_n']->styles['menu_css']->file = 'misc/menu.css';
   settings::$data['pages']['menu']['page_n']->content['block_menus'] = new \stdClass();
   settings::$data['pages']['menu']['page_n']->content['block_menus']->type = 'code';
-  settings::$data['pages']['menu']['page_n']->content['block_menus']->handler = '\\effectivecore\\modules\\menu\\events::on_block_menus';
+  settings::$data['pages']['menu']['page_n']->content['block_menus']->handler = '\\effectivecore\\modules\\menu\\events_page::on_show_menus';
   settings::$data['pages']['menu']['page_n']->content['block_menus']->region = 'nav';
   settings::$data['pages']['page']['page_n'] = new \stdClass();
   settings::$data['pages']['page']['page_n']->url = new \stdClass();
