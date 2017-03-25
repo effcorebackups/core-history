@@ -72,6 +72,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\token']->classname = 'token';
   cache::$data['classes_map']['effectivecore\token']->parents = [];
   cache::$data['classes_map']['effectivecore\token']->file = 'modules/core/classes/abstract--token.php';
+  cache::$data['classes_map']['effectivecore\urls'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\urls']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\urls']->classname = 'urls';
+  cache::$data['classes_map']['effectivecore\urls']->parents = [];
+  cache::$data['classes_map']['effectivecore\urls']->file = 'modules/core/classes/abstract--urls.php';
   cache::$data['classes_map']['effectivecore\file'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\file']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\file']->classname = 'file';
