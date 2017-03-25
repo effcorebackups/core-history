@@ -327,9 +327,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_n_edit']->access = new \stdClass();
   settings::$data['pages']['user']['page_user_n_edit']->access->roles['admins'] = 'admins';
   settings::$data['pages']['user']['page_user_n_edit']->access->roles['logged'] = 'logged';
+  settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit'] = new \stdClass();
+  settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->type = 'code';
+  settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->handler = '\\effectivecore\\modules\\user\\events::on_page_user_n_edit';
+  settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->region = 'content';
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit'] = new \stdClass();
-  settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->type = 'code';
-  settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->handler = '\\effectivecore\\modules\\user\\events::on_page_user_n_edit';
+  settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->type = 'link';
+  settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->entity = 'forms/user/form_user_n_edit';
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->region = 'content';
   settings::$data['pages']['user']['page_user_register'] = new \stdClass();
   settings::$data['pages']['user']['page_user_register']->title = 'Register new user';
@@ -338,8 +342,8 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_register']->access = new \stdClass();
   settings::$data['pages']['user']['page_user_register']->access->roles['anonymous'] = 'anonymous';
   settings::$data['pages']['user']['page_user_register']->content['form_user_register'] = new \stdClass();
-  settings::$data['pages']['user']['page_user_register']->content['form_user_register']->type = 'code';
-  settings::$data['pages']['user']['page_user_register']->content['form_user_register']->handler = '\\effectivecore\\modules\\user\\events::on_page_user_register';
+  settings::$data['pages']['user']['page_user_register']->content['form_user_register']->type = 'link';
+  settings::$data['pages']['user']['page_user_register']->content['form_user_register']->entity = 'forms/user/form_user_register';
   settings::$data['pages']['user']['page_user_register']->content['form_user_register']->region = 'content';
   settings::$data['db']['data'] = new \stdClass();
   settings::$data['db']['data']->prod = new \stdClass();
