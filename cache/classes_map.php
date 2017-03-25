@@ -172,6 +172,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\user\events_form']->classname = 'events_form';
   cache::$data['classes_map']['effectivecore\modules\user\events_form']->parents['effectivecore\events_form'] = 'effectivecore\\events_form';
   cache::$data['classes_map']['effectivecore\modules\user\events_form']->file = 'modules/user/classes/class_abstract--events_form.php';
+  cache::$data['classes_map']['effectivecore\modules\user\events_page'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\modules\user\events_page']->namespace = 'effectivecore\\modules\\user';
+  cache::$data['classes_map']['effectivecore\modules\user\events_page']->classname = 'events_page';
+  cache::$data['classes_map']['effectivecore\modules\user\events_page']->parents['effectivecore\events_page'] = 'effectivecore\\events_page';
+  cache::$data['classes_map']['effectivecore\modules\user\events_page']->file = 'modules/user/classes/class_abstract--events_page.php';
   cache::$data['classes_map']['effectivecore\modules\user\session'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\modules\user\session']->namespace = 'effectivecore\\modules\\user';
   cache::$data['classes_map']['effectivecore\modules\user\session']->classname = 'session';

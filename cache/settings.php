@@ -263,7 +263,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_admin_roles']->constants['items_per_page'] = '50';
   settings::$data['pages']['user']['page_admin_roles']->content['block_roles'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_roles']->content['block_roles']->type = 'code';
-  settings::$data['pages']['user']['page_admin_roles']->content['block_roles']->handler = '\\effectivecore\\modules\\user\\events::on_page_admin_roles';
+  settings::$data['pages']['user']['page_admin_roles']->content['block_roles']->handler = '\\effectivecore\\modules\\user\\events_page::on_page_admin_roles';
   settings::$data['pages']['user']['page_admin_roles']->content['block_roles']->region = 'content';
   settings::$data['pages']['user']['page_admin_users'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_users']->title = 'Users';
@@ -274,7 +274,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_admin_users']->constants['items_per_page'] = '50';
   settings::$data['pages']['user']['page_admin_users']->content['block_users'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_users']->content['block_users']->type = 'code';
-  settings::$data['pages']['user']['page_admin_users']->content['block_users']->handler = '\\effectivecore\\modules\\user\\events::on_page_admin_users';
+  settings::$data['pages']['user']['page_admin_users']->content['block_users']->handler = '\\effectivecore\\modules\\user\\events_page::on_page_admin_users';
   settings::$data['pages']['user']['page_admin_users']->content['block_users']->region = 'content';
   settings::$data['pages']['user']['page_admin_users_delete_n'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_users_delete_n']->title = 'Delete user \"%%_user_email\"?';
@@ -285,7 +285,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_admin_users_delete_n']->access->roles['admins'] = 'admins';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->type = 'code';
-  settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->handler = '\\effectivecore\\modules\\user\\events::on_page_admin_users_delete_n';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->handler = '\\effectivecore\\modules\\user\\events_page::on_page_admin_users_delete_n';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->region = 'content';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->type = 'link';
@@ -310,7 +310,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_logout']->access->roles['logged'] = 'logged';
   settings::$data['pages']['user']['page_user_logout']->content['code_logout'] = new \stdClass();
   settings::$data['pages']['user']['page_user_logout']->content['code_logout']->type = 'code';
-  settings::$data['pages']['user']['page_user_logout']->content['code_logout']->handler = '\\effectivecore\\modules\\user\\events::on_page_user_logout';
+  settings::$data['pages']['user']['page_user_logout']->content['code_logout']->handler = '\\effectivecore\\modules\\user\\events_page::on_page_user_logout';
   settings::$data['pages']['user']['page_user_logout']->content['code_logout']->region = 'content';
   settings::$data['pages']['user']['page_user_n'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n']->title = '%%_profile_title';
@@ -322,7 +322,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_n']->access->roles['logged'] = 'logged';
   settings::$data['pages']['user']['page_user_n']->content['block_user_n'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n']->content['block_user_n']->type = 'code';
-  settings::$data['pages']['user']['page_user_n']->content['block_user_n']->handler = '\\effectivecore\\modules\\user\\events::on_page_user_n';
+  settings::$data['pages']['user']['page_user_n']->content['block_user_n']->handler = '\\effectivecore\\modules\\user\\events_page::on_page_user_n';
   settings::$data['pages']['user']['page_user_n']->content['block_user_n']->region = 'content';
   settings::$data['pages']['user']['page_user_n_edit'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n_edit']->title = '%%_profile_edit_title';
@@ -334,7 +334,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_n_edit']->access->roles['logged'] = 'logged';
   settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->type = 'code';
-  settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->handler = '\\effectivecore\\modules\\user\\events::on_page_user_n_edit';
+  settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->handler = '\\effectivecore\\modules\\user\\events_page::on_page_user_n_edit';
   settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->region = 'content';
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->type = 'link';
