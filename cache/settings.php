@@ -190,7 +190,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['core']['page_install']->url->match = '%^/install$%';
   settings::$data['pages']['core']['page_install']->content['block_install'] = new \stdClass();
   settings::$data['pages']['core']['page_install']->content['block_install']->type = 'code';
-  settings::$data['pages']['core']['page_install']->content['block_install']->handler = '\\effectivecore\\events::on_page_install';
+  settings::$data['pages']['core']['page_install']->content['block_install']->handler = '\\effectivecore\\events_page::on_show_install';
   settings::$data['pages']['core']['page_install']->content['block_install']->region = 'content';
   settings::$data['pages']['core']['page_modules'] = new \stdClass();
   settings::$data['pages']['core']['page_modules']->title = 'Modules';
