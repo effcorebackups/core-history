@@ -87,6 +87,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\events_page']->classname = 'events_page';
   cache::$data['classes_map']['effectivecore\events_page']->parents['events'] = 'events';
   cache::$data['classes_map']['effectivecore\events_page']->file = 'modules/core/classes/class_abstract--events_page.php';
+  cache::$data['classes_map']['effectivecore\events_token'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\events_token']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\events_token']->classname = 'events_token';
+  cache::$data['classes_map']['effectivecore\events_token']->parents['events'] = 'events';
+  cache::$data['classes_map']['effectivecore\events_token']->file = 'modules/core/classes/class_abstract--events_token.php';
   cache::$data['classes_map']['effectivecore\factory'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\factory']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\factory']->classname = 'factory';
@@ -162,11 +167,6 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\user\access']->classname = 'access';
   cache::$data['classes_map']['effectivecore\modules\user\access']->parents = [];
   cache::$data['classes_map']['effectivecore\modules\user\access']->file = 'modules/user/classes/class_abstract--access.php';
-  cache::$data['classes_map']['effectivecore\modules\user\events'] = new \stdClass();
-  cache::$data['classes_map']['effectivecore\modules\user\events']->namespace = 'effectivecore\\modules\\user';
-  cache::$data['classes_map']['effectivecore\modules\user\events']->classname = 'events';
-  cache::$data['classes_map']['effectivecore\modules\user\events']->parents['effectivecore\events'] = 'effectivecore\\events';
-  cache::$data['classes_map']['effectivecore\modules\user\events']->file = 'modules/user/classes/class_abstract--events.php';
   cache::$data['classes_map']['effectivecore\modules\user\events_form'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\modules\user\events_form']->namespace = 'effectivecore\\modules\\user';
   cache::$data['classes_map']['effectivecore\modules\user\events_form']->classname = 'events_form';
@@ -182,6 +182,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\user\events_page']->classname = 'events_page';
   cache::$data['classes_map']['effectivecore\modules\user\events_page']->parents['effectivecore\events_page'] = 'effectivecore\\events_page';
   cache::$data['classes_map']['effectivecore\modules\user\events_page']->file = 'modules/user/classes/class_abstract--events_page.php';
+  cache::$data['classes_map']['effectivecore\modules\user\events_token'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\modules\user\events_token']->namespace = 'effectivecore\\modules\\user';
+  cache::$data['classes_map']['effectivecore\modules\user\events_token']->classname = 'events_token';
+  cache::$data['classes_map']['effectivecore\modules\user\events_token']->parents['effectivecore\events_token'] = 'effectivecore\\events_token';
+  cache::$data['classes_map']['effectivecore\modules\user\events_token']->file = 'modules/user/classes/class_abstract--events_token.php';
   cache::$data['classes_map']['effectivecore\modules\user\session'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\modules\user\session']->namespace = 'effectivecore\\modules\\user';
   cache::$data['classes_map']['effectivecore\modules\user\session']->classname = 'session';
