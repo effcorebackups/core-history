@@ -91,7 +91,7 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\form']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\form']->classname = 'form';
   cache::$data['classes_map']['effectivecore\form']->parents = [];
-  cache::$data['classes_map']['effectivecore\form']->file = 'modules/core/classes/form_n.php';
+  cache::$data['classes_map']['effectivecore\form']->file = 'modules/core/classes/form.php';
   cache::$data['classes_map']['effectivecore\html'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\html']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\html']->classname = 'html';
@@ -116,7 +116,7 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\message']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\message']->classname = 'message';
   cache::$data['classes_map']['effectivecore\message']->parents = [];
-  cache::$data['classes_map']['effectivecore\message']->file = 'modules/core/classes/message_n.php';
+  cache::$data['classes_map']['effectivecore\message']->file = 'modules/core/classes/message.php';
   cache::$data['classes_map']['effectivecore\template'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\template']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\template']->classname = 'template';
