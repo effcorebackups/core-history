@@ -133,13 +133,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menus']['core']['main'] = new \effectivecore\menu();
   settings::$data['menus']['core']['main']->title = '';
   settings::$data['menus']['core']['main']->attributes = new \stdClass();
-  settings::$data['menus']['core']['main']->attributes->class = 'menu-main';
+  settings::$data['menus']['core']['main']->attributes->class = 'main';
   settings::$data['menus']['core']['main']->weight = 0;
   settings::$data['menus']['core']['main']->children = [];
   settings::$data['menus']['user']['user'] = new \effectivecore\menu();
   settings::$data['menus']['user']['user']->title = '';
   settings::$data['menus']['user']['user']->attributes = new \stdClass();
-  settings::$data['menus']['user']['user']->attributes->class = 'menu-user';
+  settings::$data['menus']['user']['user']->attributes->class = 'user';
   settings::$data['menus']['user']['user']->weight = 0;
   settings::$data['menus']['user']['user']->children = [];
   settings::$data['module']['core'] = new \stdClass();
