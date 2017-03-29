@@ -177,6 +177,9 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['menu']->version = '1.0';
   settings::$data['module']['menu']->is_embed = '1';
   settings::$data['module']['menu']->is_always_on = '1';
+  settings::$data['module']['menu']->on_init = new \stdClass();
+  settings::$data['module']['menu']->on_init->handler = '\\effectivecore\\modules\\menu\\events_module::on_init';
+  settings::$data['module']['menu']->on_init->weight = '0';
   settings::$data['module']['page'] = new \stdClass();
   settings::$data['module']['page']->id = 'page';
   settings::$data['module']['page']->path = 'modules/page';

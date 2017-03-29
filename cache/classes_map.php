@@ -152,6 +152,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\demo\events_page']->classname = 'events_page';
   cache::$data['classes_map']['effectivecore\modules\demo\events_page']->parents['effectivecore\events'] = 'effectivecore\\events';
   cache::$data['classes_map']['effectivecore\modules\demo\events_page']->file = 'modules/demo/classes/abstract--events_page.php';
+  cache::$data['classes_map']['effectivecore\modules\menu\events_module'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\modules\menu\events_module']->namespace = 'effectivecore\\modules\\menu';
+  cache::$data['classes_map']['effectivecore\modules\menu\events_module']->classname = 'events_module';
+  cache::$data['classes_map']['effectivecore\modules\menu\events_module']->parents['effectivecore\events_module'] = 'effectivecore\\events_module';
+  cache::$data['classes_map']['effectivecore\modules\menu\events_module']->file = 'modules/menu/classes/abstract--events_module.php';
   cache::$data['classes_map']['effectivecore\menu'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\menu']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\menu']->classname = 'menu';
