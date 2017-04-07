@@ -105,7 +105,7 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\markup'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\markup']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\markup']->classname = 'markup';
-  cache::$data['classes_map']['effectivecore\markup']->parents = [];
+  cache::$data['classes_map']['effectivecore\markup']->parents['node'] = 'node';
   cache::$data['classes_map']['effectivecore\markup']->file = 'modules/core/classes/global--markup.php';
   cache::$data['classes_map']['effectivecore\message'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\message']->namespace = 'effectivecore';
