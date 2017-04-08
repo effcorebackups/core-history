@@ -27,14 +27,14 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['core']['main_home']->attributes->href = '/';
   settings::$data['menu_items']['core']['main_home']->attributes->class = 'logo';
   settings::$data['menu_items']['core']['main_home']->weight = 0;
-  settings::$data['menu_items']['core']['main_home']->children = [];
+  settings::$data['menu_items']['core']['main_home']->children = null;
   settings::$data['menu_items']['core']['main_home']->parent = 'menus/core/main';
   settings::$data['menu_items']['core']['main_admin'] = new \effectivecore\menu_item();
   settings::$data['menu_items']['core']['main_admin']->title = 'Administer';
   settings::$data['menu_items']['core']['main_admin']->attributes = new \stdClass();
   settings::$data['menu_items']['core']['main_admin']->attributes->class = 'admin';
   settings::$data['menu_items']['core']['main_admin']->weight = 0;
-  settings::$data['menu_items']['core']['main_admin']->children = [];
+  settings::$data['menu_items']['core']['main_admin']->children = null;
   settings::$data['menu_items']['core']['main_admin']->parent = 'menus/core/main';
   settings::$data['menu_items']['core']['main_admin']->access = new \stdClass();
   settings::$data['menu_items']['core']['main_admin']->access->roles['admins'] = 'admins';
@@ -44,7 +44,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['core']['main_admin_modules']->attributes->class = 'modules';
   settings::$data['menu_items']['core']['main_admin_modules']->attributes->href = '/admin/modules';
   settings::$data['menu_items']['core']['main_admin_modules']->weight = 0;
-  settings::$data['menu_items']['core']['main_admin_modules']->children = [];
+  settings::$data['menu_items']['core']['main_admin_modules']->children = null;
   settings::$data['menu_items']['core']['main_admin_modules']->parent = 'menu_items/core/main_admin';
   settings::$data['menu_items']['core']['main_admin_modules']->access = new \stdClass();
   settings::$data['menu_items']['core']['main_admin_modules']->access->roles['admins'] = 'admins';
@@ -53,7 +53,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['demo']['demo']->attributes = new \stdClass();
   settings::$data['menu_items']['demo']['demo']->attributes->href = '/demo';
   settings::$data['menu_items']['demo']['demo']->weight = 0;
-  settings::$data['menu_items']['demo']['demo']->children = [];
+  settings::$data['menu_items']['demo']['demo']->children = null;
   settings::$data['menu_items']['demo']['demo']->parent = 'menus/core/main';
   settings::$data['menu_items']['demo']['demo']->access = new \stdClass();
   settings::$data['menu_items']['demo']['demo']->access->roles['anonymous'] = 'anonymous';
@@ -63,7 +63,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['user_anonymous']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['user_anonymous']->attributes->class = 'user';
   settings::$data['menu_items']['user']['user_anonymous']->weight = 0;
-  settings::$data['menu_items']['user']['user_anonymous']->children = [];
+  settings::$data['menu_items']['user']['user_anonymous']->children = null;
   settings::$data['menu_items']['user']['user_anonymous']->parent = 'menus/user/user';
   settings::$data['menu_items']['user']['user_anonymous']->access = new \stdClass();
   settings::$data['menu_items']['user']['user_anonymous']->access->roles['anonymous'] = 'anonymous';
@@ -72,7 +72,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['user_login']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['user_login']->attributes->href = '/user/login';
   settings::$data['menu_items']['user']['user_login']->weight = '-80';
-  settings::$data['menu_items']['user']['user_login']->children = [];
+  settings::$data['menu_items']['user']['user_login']->children = null;
   settings::$data['menu_items']['user']['user_login']->parent = 'menu_items/user/user_anonymous';
   settings::$data['menu_items']['user']['user_login']->access = new \stdClass();
   settings::$data['menu_items']['user']['user_login']->access->roles['anonymous'] = 'anonymous';
@@ -81,7 +81,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['user_register']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['user_register']->attributes->href = '/user/register';
   settings::$data['menu_items']['user']['user_register']->weight = '-60';
-  settings::$data['menu_items']['user']['user_register']->children = [];
+  settings::$data['menu_items']['user']['user_register']->children = null;
   settings::$data['menu_items']['user']['user_register']->parent = 'menu_items/user/user_anonymous';
   settings::$data['menu_items']['user']['user_register']->access = new \stdClass();
   settings::$data['menu_items']['user']['user_register']->access->roles['anonymous'] = 'anonymous';
@@ -91,7 +91,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['user_n']->attributes->href = '/user/%%_user_id';
   settings::$data['menu_items']['user']['user_n']->attributes->class = 'user';
   settings::$data['menu_items']['user']['user_n']->weight = 0;
-  settings::$data['menu_items']['user']['user_n']->children = [];
+  settings::$data['menu_items']['user']['user_n']->children = null;
   settings::$data['menu_items']['user']['user_n']->parent = 'menus/user/user';
   settings::$data['menu_items']['user']['user_n']->access = new \stdClass();
   settings::$data['menu_items']['user']['user_n']->access->roles['admins'] = 'admins';
@@ -101,7 +101,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['user_n_edit']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['user_n_edit']->attributes->href = '/user/%%_user_id/edit';
   settings::$data['menu_items']['user']['user_n_edit']->weight = '-100';
-  settings::$data['menu_items']['user']['user_n_edit']->children = [];
+  settings::$data['menu_items']['user']['user_n_edit']->children = null;
   settings::$data['menu_items']['user']['user_n_edit']->parent = 'menu_items/user/user_n';
   settings::$data['menu_items']['user']['user_n_edit']->access = new \stdClass();
   settings::$data['menu_items']['user']['user_n_edit']->access->roles['admins'] = 'admins';
@@ -111,7 +111,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['user_logout']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['user_logout']->attributes->href = '/user/logout';
   settings::$data['menu_items']['user']['user_logout']->weight = '-40';
-  settings::$data['menu_items']['user']['user_logout']->children = [];
+  settings::$data['menu_items']['user']['user_logout']->children = null;
   settings::$data['menu_items']['user']['user_logout']->parent = 'menu_items/user/user_n';
   settings::$data['menu_items']['user']['user_logout']->access = new \stdClass();
   settings::$data['menu_items']['user']['user_logout']->access->roles['logged'] = 'logged';
@@ -120,7 +120,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['main_admin_roles']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['main_admin_roles']->attributes->href = '/admin/roles';
   settings::$data['menu_items']['user']['main_admin_roles']->weight = 0;
-  settings::$data['menu_items']['user']['main_admin_roles']->children = [];
+  settings::$data['menu_items']['user']['main_admin_roles']->children = null;
   settings::$data['menu_items']['user']['main_admin_roles']->parent = 'menu_items/core/main_admin';
   settings::$data['menu_items']['user']['main_admin_roles']->access = new \stdClass();
   settings::$data['menu_items']['user']['main_admin_roles']->access->roles['admins'] = 'admins';
@@ -129,7 +129,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menu_items']['user']['main_admin_users']->attributes = new \stdClass();
   settings::$data['menu_items']['user']['main_admin_users']->attributes->href = '/admin/users';
   settings::$data['menu_items']['user']['main_admin_users']->weight = 0;
-  settings::$data['menu_items']['user']['main_admin_users']->children = [];
+  settings::$data['menu_items']['user']['main_admin_users']->children = null;
   settings::$data['menu_items']['user']['main_admin_users']->parent = 'menu_items/core/main_admin';
   settings::$data['menu_items']['user']['main_admin_users']->access = new \stdClass();
   settings::$data['menu_items']['user']['main_admin_users']->access->roles['admins'] = 'admins';
@@ -138,13 +138,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['menus']['core']['main']->attributes = new \stdClass();
   settings::$data['menus']['core']['main']->attributes->class = 'main';
   settings::$data['menus']['core']['main']->weight = 0;
-  settings::$data['menus']['core']['main']->children = [];
+  settings::$data['menus']['core']['main']->children = null;
   settings::$data['menus']['user']['user'] = new \effectivecore\menu();
   settings::$data['menus']['user']['user']->title = '';
   settings::$data['menus']['user']['user']->attributes = new \stdClass();
   settings::$data['menus']['user']['user']->attributes->class = 'user';
   settings::$data['menus']['user']['user']->weight = 0;
-  settings::$data['menus']['user']['user']->children = [];
+  settings::$data['menus']['user']['user']->children = null;
   settings::$data['module']['core'] = new \stdClass();
   settings::$data['module']['core']->id = 'core';
   settings::$data['module']['core']->title = 'Core';
@@ -431,7 +431,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['demo']['form_demo']->children['field_text']->attributes->required = '1';
   settings::$data['forms']['demo']['form_demo']->children['field_text']->attributes->maxlength = '255';
   settings::$data['forms']['demo']['form_demo']->children['field_text']->weight = 0;
-  settings::$data['forms']['demo']['form_demo']->children['field_text']->children = [];
+  settings::$data['forms']['demo']['form_demo']->children['field_text']->children = null;
   settings::$data['forms']['demo']['form_demo']->children['button_login'] = new \effectivecore\markup();
   settings::$data['forms']['demo']['form_demo']->children['button_login']->type = 'input';
   settings::$data['forms']['demo']['form_demo']->children['button_login']->attributes = new \stdClass();
@@ -439,7 +439,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['demo']['form_demo']->children['button_login']->attributes->name = 'button';
   settings::$data['forms']['demo']['form_demo']->children['button_login']->attributes->value = 'ok';
   settings::$data['forms']['demo']['form_demo']->children['button_login']->weight = 0;
-  settings::$data['forms']['demo']['form_demo']->children['button_login']->children = [];
+  settings::$data['forms']['demo']['form_demo']->children['button_login']->children = null;
   settings::$data['forms']['demo']['form_demo']->errors = [];
   settings::$data['forms']['user']['form_user_login'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_login']->form_args = [];
@@ -461,7 +461,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->required = '1';
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->maxlength = '255';
   settings::$data['forms']['user']['form_user_login']->children['field_email']->weight = 0;
-  settings::$data['forms']['user']['form_user_login']->children['field_email']->children = [];
+  settings::$data['forms']['user']['form_user_login']->children['field_email']->children = null;
   settings::$data['forms']['user']['form_user_login']->children['field_password'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_login']->children['field_password']->type = 'input';
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes = new \stdClass();
@@ -472,7 +472,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->minlength = '5';
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->maxlength = '255';
   settings::$data['forms']['user']['form_user_login']->children['field_password']->weight = 0;
-  settings::$data['forms']['user']['form_user_login']->children['field_password']->children = [];
+  settings::$data['forms']['user']['form_user_login']->children['field_password']->children = null;
   settings::$data['forms']['user']['form_user_login']->children['button_login'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_login']->children['button_login']->type = 'input';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes = new \stdClass();
@@ -480,7 +480,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->value = 'login';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->weight = 0;
-  settings::$data['forms']['user']['form_user_login']->children['button_login']->children = [];
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->children = null;
   settings::$data['forms']['user']['form_user_login']->errors = [];
   settings::$data['forms']['user']['form_user_logout'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_logout']->form_args = [];
@@ -499,7 +499,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->value = 'logout';
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->weight = 0;
-  settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children = [];
+  settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children = null;
   settings::$data['forms']['user']['form_user_logout']->errors = [];
   settings::$data['forms']['user']['form_user_n_delete'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_n_delete']->form_args = [];
@@ -518,7 +518,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->value = 'delete';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children = [];
+  settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children = null;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->type = 'input';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes = new \stdClass();
@@ -526,7 +526,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->value = 'cancel';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children = [];
+  settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children = null;
   settings::$data['forms']['user']['form_user_n_delete']->errors = [];
   settings::$data['forms']['user']['form_user_n_edit'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_n_edit']->form_args = [];
@@ -549,7 +549,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->minlength = '5';
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->maxlength = '255';
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->children = [];
+  settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->children = null;
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->type = 'input';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes = new \stdClass();
@@ -557,7 +557,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes->value = 'save';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->children = [];
+  settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->children = null;
   settings::$data['forms']['user']['form_user_n_edit']->errors = [];
   settings::$data['forms']['user']['form_user_register'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_register']->form_args = [];
@@ -579,7 +579,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->required = '1';
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->maxlength = '255';
   settings::$data['forms']['user']['form_user_register']->children['field_email']->weight = 0;
-  settings::$data['forms']['user']['form_user_register']->children['field_email']->children = [];
+  settings::$data['forms']['user']['form_user_register']->children['field_email']->children = null;
   settings::$data['forms']['user']['form_user_register']->children['field_password'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_register']->children['field_password']->type = 'input';
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes = new \stdClass();
@@ -590,7 +590,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->minlength = '5';
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->maxlength = '255';
   settings::$data['forms']['user']['form_user_register']->children['field_password']->weight = 0;
-  settings::$data['forms']['user']['form_user_register']->children['field_password']->children = [];
+  settings::$data['forms']['user']['form_user_register']->children['field_password']->children = null;
   settings::$data['forms']['user']['form_user_register']->children['button_register'] = new \effectivecore\markup();
   settings::$data['forms']['user']['form_user_register']->children['button_register']->type = 'input';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes = new \stdClass();
@@ -598,7 +598,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->value = 'register';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->weight = 0;
-  settings::$data['forms']['user']['form_user_register']->children['button_register']->children = [];
+  settings::$data['forms']['user']['form_user_register']->children['button_register']->children = null;
   settings::$data['forms']['user']['form_user_register']->errors = [];
   settings::$data['demo_tree']['demo'] = new \effectivecore\markup();
   settings::$data['demo_tree']['demo']->type = 'ul';
