@@ -85,7 +85,7 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\form'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\form']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\form']->classname = 'form';
-  cache::$data['classes_map']['effectivecore\form']->parents = [];
+  cache::$data['classes_map']['effectivecore\form']->parents['markup'] = 'markup';
   cache::$data['classes_map']['effectivecore\form']->file = 'modules/core/classes/global--form.php';
   cache::$data['classes_map']['effectivecore\html'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\html']->namespace = 'effectivecore';
