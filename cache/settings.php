@@ -400,6 +400,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['templates']['core']['messages'] = 'templates/template--messages.html';
   settings::$data['templates']['core']['message_group'] = 'templates/template--message_group.html';
   settings::$data['templates']['core']['message'] = 'templates/template--message.html';
+  settings::$data['templates']['core']['table'] = 'templates/template--table.html';
+  settings::$data['templates']['core']['table_head'] = 'templates/template--table_head.html';
+  settings::$data['templates']['core']['table_head_row'] = 'templates/template--table_head_row.html';
+  settings::$data['templates']['core']['table_head_row_cell'] = 'templates/template--table_head_row_cell.html';
+  settings::$data['templates']['core']['table_body'] = 'templates/template--table_body.html';
+  settings::$data['templates']['core']['table_body_row'] = 'templates/template--table_body_row.html';
+  settings::$data['templates']['core']['table_body_row_cell'] = 'templates/template--table_body_row_cell.html';
   settings::$data['templates']['menu']['menu'] = 'templates/template--menu.html';
   settings::$data['templates']['menu']['menu_self'] = 'templates/template--menu_self.html';
   settings::$data['templates']['menu']['menu_children'] = 'templates/template--menu_children.html';
