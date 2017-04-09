@@ -665,6 +665,9 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['templates']['menu']['menu'] = 'templates/template--menu.html';
   settings::$data['templates']['menu']['menu_self'] = 'templates/template--menu_self.html';
   settings::$data['templates']['menu']['menu_children'] = 'templates/template--menu_children.html';
+  settings::$data['templates']['menu']['menu_item'] = 'templates/template--menu_item.html';
+  settings::$data['templates']['menu']['menu_item_self'] = 'templates/template--menu_item_self.html';
+  settings::$data['templates']['menu']['menu_item_children'] = 'templates/template--menu_item_children.html';
   settings::$data['templates']['page']['html_element'] = 'templates/template--html_element.html';
   settings::$data['templates']['page']['html_element_simple'] = 'templates/template--html_element.simple.html';
   settings::$data['templates']['page']['page'] = 'templates/template--page.html';
