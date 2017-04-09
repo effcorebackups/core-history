@@ -662,6 +662,12 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['demo_tree']['demo']->children['li_3']->attributes->class = 'li-3';
   settings::$data['demo_tree']['demo']->children['li_3']->weight = 0;
   settings::$data['demo_tree']['demo']->children['li_3']->children = 'item li 3';
+  settings::$data['templates']['menu']['menu'] = 'templates/template--menu.html';
+  settings::$data['templates']['menu']['menu_self'] = 'templates/template--menu_self.html';
+  settings::$data['templates']['menu']['menu_children'] = 'templates/template--menu_children.html';
+  settings::$data['templates']['page']['html_element'] = 'templates/template--html_element.html';
+  settings::$data['templates']['page']['html_element_simple'] = 'templates/template--html_element.simple.html';
+  settings::$data['templates']['page']['page'] = 'templates/template--page.html';
   settings::$data['tokens']['menu']['nav_bg_color'] = new \stdClass();
   settings::$data['tokens']['menu']['nav_bg_color']->match = '%%_nav_bg_color';
   settings::$data['tokens']['menu']['nav_bg_color']->type = 'text';
@@ -682,9 +688,5 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['tokens']['user']['profile_edit_title']->match = '%%_profile_edit_title';
   settings::$data['tokens']['user']['profile_edit_title']->type = 'code';
   settings::$data['tokens']['user']['profile_edit_title']->handler = '\\effectivecore\\modules\\user\\events_token::on_replace';
-  settings::$data['templates']['page'] = new \stdClass();
-  settings::$data['templates']['page']->html_element = 'templates/template--html_element.html';
-  settings::$data['templates']['page']->html_element_simple = 'templates/template--html_element.simple.html';
-  settings::$data['templates']['page']->page = 'templates/template--page.html';
 
 }
