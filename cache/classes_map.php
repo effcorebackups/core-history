@@ -122,11 +122,6 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\node']->classname = 'node';
   cache::$data['classes_map']['effectivecore\node']->parents = [];
   cache::$data['classes_map']['effectivecore\node']->file = 'modules/core/classes/global--node.php';
-  cache::$data['classes_map']['effectivecore\table'] = new \stdClass();
-  cache::$data['classes_map']['effectivecore\table']->namespace = 'effectivecore';
-  cache::$data['classes_map']['effectivecore\table']->classname = 'table';
-  cache::$data['classes_map']['effectivecore\table']->parents['markup'] = 'markup';
-  cache::$data['classes_map']['effectivecore\table']->file = 'modules/core/classes/global--table.php';
   cache::$data['classes_map']['effectivecore\template'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\template']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\template']->classname = 'template';
@@ -187,6 +182,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\page\page']->classname = 'page';
   cache::$data['classes_map']['effectivecore\modules\page\page']->parents = [];
   cache::$data['classes_map']['effectivecore\modules\page\page']->file = 'modules/page/classes/abstract--page.php';
+  cache::$data['classes_map']['effectivecore\table'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\table']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\table']->classname = 'table';
+  cache::$data['classes_map']['effectivecore\table']->parents['node'] = 'node';
+  cache::$data['classes_map']['effectivecore\table']->file = 'modules/page/classes/global--table.php';
   cache::$data['classes_map']['effectivecore\modules\user\access'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\modules\user\access']->namespace = 'effectivecore\\modules\\user';
   cache::$data['classes_map']['effectivecore\modules\user\access']->classname = 'access';
