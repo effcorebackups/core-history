@@ -122,6 +122,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\node']->classname = 'node';
   cache::$data['classes_map']['effectivecore\node']->parents = [];
   cache::$data['classes_map']['effectivecore\node']->file = 'modules/core/classes/global--node.php';
+  cache::$data['classes_map']['effectivecore\table'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\table']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\table']->classname = 'table';
+  cache::$data['classes_map']['effectivecore\table']->parents['markup'] = 'markup';
+  cache::$data['classes_map']['effectivecore\table']->file = 'modules/core/classes/global--table.php';
   cache::$data['classes_map']['effectivecore\template'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\template']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\template']->classname = 'template';
