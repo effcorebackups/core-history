@@ -167,11 +167,6 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\html_pager']->classname = 'html_pager';
   cache::$data['classes_map']['effectivecore\html_pager']->parents['html'] = 'html';
   cache::$data['classes_map']['effectivecore\html_pager']->file = 'modules/page/classes/global--html_pager.php';
-  cache::$data['classes_map']['effectivecore\html_table'] = new \stdClass();
-  cache::$data['classes_map']['effectivecore\html_table']->namespace = 'effectivecore';
-  cache::$data['classes_map']['effectivecore\html_table']->classname = 'html_table';
-  cache::$data['classes_map']['effectivecore\html_table']->parents['html'] = 'html';
-  cache::$data['classes_map']['effectivecore\html_table']->file = 'modules/page/classes/global--html_table.php';
   cache::$data['classes_map']['effectivecore\markup'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\markup']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\markup']->classname = 'markup';
