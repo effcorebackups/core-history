@@ -512,7 +512,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes = new \stdClass();
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->type = 'email';
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->name = 'email';
-  settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder->text = 'Email';
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->required = 1;
@@ -527,7 +527,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes = new \stdClass();
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->type = 'password';
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->name = 'password';
-  settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder->text = 'Password';
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->required = 1;
@@ -545,7 +545,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->value = 'login';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->weight = 0;
-  settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label'] = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label']->text = 'login';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_login']->children['button_login']->template = null;
@@ -574,7 +574,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->value = 'logout';
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->weight = 0;
-  settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children['label'] = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children['label']->text = 'logout';
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->template = null;
@@ -603,7 +603,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->value = 'delete';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children['label'] = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children['label']->text = 'delete';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->template = null;
@@ -616,7 +616,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->value = 'cancel';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children['label'] = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children['label']->text = 'cancel';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->template = null;
@@ -644,7 +644,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes = new \stdClass();
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->type = 'password';
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->name = 'password';
-  settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder->text = 'Password';
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->required = 1;
@@ -662,7 +662,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->attributes->value = 'save';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->weight = 0;
-  settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->children['label'] = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->children['label']->text = 'save';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_n_edit']->children['button_save']->template = null;
@@ -690,7 +690,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes = new \stdClass();
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->type = 'email';
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->name = 'email';
-  settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder->text = 'Email';
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->required = 1;
@@ -705,7 +705,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes = new \stdClass();
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->type = 'password';
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->name = 'password';
-  settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder->text = 'Password';
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->required = 1;
@@ -723,7 +723,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->value = 'register';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->weight = 0;
-  settings::$data['forms']['user']['form_user_register']->children['button_register']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_register']->children['button_register']->children['label'] = new \effectivecore\text();
   settings::$data['forms']['user']['form_user_register']->children['button_register']->children['label']->text = 'register';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['button_register']->template = null;
