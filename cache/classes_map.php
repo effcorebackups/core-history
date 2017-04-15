@@ -112,6 +112,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\messages']->classname = 'messages';
   cache::$data['classes_map']['effectivecore\messages']->parents = [];
   cache::$data['classes_map']['effectivecore\messages']->file = 'modules/core/classes/global--messages.php';
+  cache::$data['classes_map']['effectivecore\translated_text'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\translated_text']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\translated_text']->classname = 'translated_text';
+  cache::$data['classes_map']['effectivecore\translated_text']->parents = [];
+  cache::$data['classes_map']['effectivecore\translated_text']->file = 'modules/core/classes/global--translated_text.php';
   cache::$data['classes_map']['effectivecore\url'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\url']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\url']->classname = 'url';
