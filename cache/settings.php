@@ -512,6 +512,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->name = 'email';
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder->text = 'Email';
+  settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->required = 1;
   settings::$data['forms']['user']['form_user_login']->children['field_email']->attributes->maxlength = 255;
   settings::$data['forms']['user']['form_user_login']->children['field_email']->weight = 0;
@@ -526,6 +527,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->name = 'password';
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder->text = 'Password';
+  settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->required = 1;
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->minlength = 5;
   settings::$data['forms']['user']['form_user_login']->children['field_password']->attributes->maxlength = 255;
@@ -535,14 +537,15 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_login']->children['field_password']->template_self = null;
   settings::$data['forms']['user']['form_user_login']->children['field_password']->template_children = null;
   settings::$data['forms']['user']['form_user_login']->children['button_login'] = new \effectivecore\markup();
-  settings::$data['forms']['user']['form_user_login']->children['button_login']->type = 'input';
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->type = 'button';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes = new \stdClass();
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->type = 'submit';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->name = 'button';
-  settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->value = new \effectivecore\translated_text();
-  settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->value->text = 'login';
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->attributes->value = 'login';
   settings::$data['forms']['user']['form_user_login']->children['button_login']->weight = 0;
-  settings::$data['forms']['user']['form_user_login']->children['button_login']->children = null;
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label'] = new \effectivecore\translated_text();
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label']->text = 'login';
+  settings::$data['forms']['user']['form_user_login']->children['button_login']->children['label']->weight = 0;
   settings::$data['forms']['user']['form_user_login']->children['button_login']->template = null;
   settings::$data['forms']['user']['form_user_login']->children['button_login']->template_self = null;
   settings::$data['forms']['user']['form_user_login']->children['button_login']->template_children = null;
@@ -569,6 +572,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->value = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->value->text = 'logout';
+  settings::$data['forms']['user']['form_user_logout']->children['button_logout']->attributes->value->weight = 0;
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->weight = 0;
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->children = null;
   settings::$data['forms']['user']['form_user_logout']->children['button_logout']->template = null;
@@ -597,6 +601,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->value = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->value->text = 'delete';
+  settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->attributes->value->weight = 0;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->weight = 0;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->children = null;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_delete']->template = null;
@@ -609,6 +614,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->value = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->value->text = 'cancel';
+  settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->attributes->value->weight = 0;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->weight = 0;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->children = null;
   settings::$data['forms']['user']['form_user_n_delete']->children['button_cancel']->template = null;
@@ -638,6 +644,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->name = 'password';
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder->text = 'Password';
+  settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->required = 1;
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->minlength = 5;
   settings::$data['forms']['user']['form_user_n_edit']->children['field_password']->attributes->maxlength = 255;
@@ -653,6 +660,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes->value = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes->value->text = 'save';
+  settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->attributes->value->weight = 0;
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->weight = 0;
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->children = null;
   settings::$data['forms']['user']['form_user_n_edit']->children['button_login']->template = null;
@@ -682,6 +690,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->name = 'email';
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder->text = 'Email';
+  settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->required = 1;
   settings::$data['forms']['user']['form_user_register']->children['field_email']->attributes->maxlength = 255;
   settings::$data['forms']['user']['form_user_register']->children['field_email']->weight = 0;
@@ -696,6 +705,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->name = 'password';
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder->text = 'Password';
+  settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->placeholder->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->required = 1;
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->minlength = 5;
   settings::$data['forms']['user']['form_user_register']->children['field_password']->attributes->maxlength = 255;
@@ -711,6 +721,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->name = 'button';
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->value = new \effectivecore\translated_text();
   settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->value->text = 'register';
+  settings::$data['forms']['user']['form_user_register']->children['button_register']->attributes->value->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['button_register']->weight = 0;
   settings::$data['forms']['user']['form_user_register']->children['button_register']->children = null;
   settings::$data['forms']['user']['form_user_register']->children['button_register']->template = null;
