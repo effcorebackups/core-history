@@ -264,7 +264,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['translate']['core']->ru['save'] = 'сохранить';
   settings::$data['translate']['core']->ru['Password'] = 'Пароль';
   settings::$data['translate']['data'] = new \stdClass();
-  settings::$data['translate']['data']->ru['Module for database support'] = 'Модуль поддержки баз данных.';
+  settings::$data['translate']['data']->ru['Module for database support.'] = 'Модуль поддержки баз данных.';
   settings::$data['translate']['page'] = new \stdClass();
   settings::$data['translate']['page']->ru['Module for working with pages.'] = 'Модуль работы со страницами.';
   settings::$data['translate']['tree'] = new \stdClass();
