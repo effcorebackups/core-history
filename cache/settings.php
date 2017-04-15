@@ -25,7 +25,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['core']->id = 'core';
   settings::$data['module']['core']->title = 'Core';
   settings::$data['module']['core']->description = 'Core module.';
-  settings::$data['module']['core']->version = '1.0';
+  settings::$data['module']['core']->version = '1-0';
   settings::$data['module']['core']->is_embed = 1;
   settings::$data['module']['core']->is_always_on = 1;
   settings::$data['module']['core']->path = 'modules/core';
@@ -33,7 +33,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['data']->id = 'data';
   settings::$data['module']['data']->title = 'Data';
   settings::$data['module']['data']->description = 'Database support module.';
-  settings::$data['module']['data']->version = '1.0';
+  settings::$data['module']['data']->version = '1-0';
   settings::$data['module']['data']->is_embed = 1;
   settings::$data['module']['data']->is_always_on = 1;
   settings::$data['module']['data']->on_init = new \stdClass();
@@ -44,7 +44,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['demo']->id = 'demo';
   settings::$data['module']['demo']->title = 'Demonstration';
   settings::$data['module']['demo']->description = 'Demonstration some functionality.';
-  settings::$data['module']['demo']->version = '1.0';
+  settings::$data['module']['demo']->version = '1-0';
   settings::$data['module']['demo']->is_embed = 1;
   settings::$data['module']['demo']->is_always_on = 0;
   settings::$data['module']['demo']->path = 'modules/demo';
@@ -52,7 +52,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['page']->id = 'page';
   settings::$data['module']['page']->title = 'Page';
   settings::$data['module']['page']->description = 'Working with pages.';
-  settings::$data['module']['page']->version = '1.0';
+  settings::$data['module']['page']->version = '1-0';
   settings::$data['module']['page']->is_embed = 1;
   settings::$data['module']['page']->is_always_on = 1;
   settings::$data['module']['page']->on_init = new \stdClass();
@@ -63,7 +63,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['tree']->id = 'tree';
   settings::$data['module']['tree']->title = 'Tree';
   settings::$data['module']['tree']->description = 'Working with trees.';
-  settings::$data['module']['tree']->version = '1.0';
+  settings::$data['module']['tree']->version = '1-0';
   settings::$data['module']['tree']->is_embed = 1;
   settings::$data['module']['tree']->is_always_on = 1;
   settings::$data['module']['tree']->on_init = new \stdClass();
@@ -74,7 +74,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['user']->id = 'user';
   settings::$data['module']['user']->title = 'User';
   settings::$data['module']['user']->description = 'Working with user accounts and permissions.';
-  settings::$data['module']['user']->version = '1.0';
+  settings::$data['module']['user']->version = '1-0';
   settings::$data['module']['user']->is_embed = 1;
   settings::$data['module']['user']->is_always_on = 1;
   settings::$data['module']['user']->on_init = new \stdClass();
