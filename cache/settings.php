@@ -501,7 +501,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['tokens']['user']['profile_edit_title']->type = 'code';
   settings::$data['tokens']['user']['profile_edit_title']->handler = '\\effectivecore\\modules\\user\\events_token::on_replace';
   settings::$data['entities']['user']['user'] = new \effectivecore\entity();
-  settings::$data['entities']['user']['user']->type = 'user';
+  settings::$data['entities']['user']['user']->name = 'user';
   settings::$data['entities']['user']['user']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['id']->type = 'int';
   settings::$data['entities']['user']['user']->fields['id']->unsigned = true;
@@ -511,11 +511,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['user']->fields['email']->size = 255;
   settings::$data['entities']['user']['user']->fields['created'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['created']->type = 'timestamp';
+  settings::$data['entities']['user']['user']->fields['created']->null = true;
+  settings::$data['entities']['user']['user']->fields['created']->default = null;
   settings::$data['entities']['user']['user']->fields['is_locked'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['is_locked']->type = 'int';
   settings::$data['entities']['user']['user']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['session'] = new \effectivecore\entity();
-  settings::$data['entities']['user']['session']->type = 'session';
+  settings::$data['entities']['user']['session']->name = 'session';
   settings::$data['entities']['user']['session']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['session']->fields['id']->type = 'int';
   settings::$data['entities']['user']['session']->fields['id']->unsigned = true;
@@ -525,6 +527,8 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['session']->fields['user_id']->unsigned = true;
   settings::$data['entities']['user']['session']->fields['created'] = new \stdClass();
   settings::$data['entities']['user']['session']->fields['created']->type = 'timestamp';
+  settings::$data['entities']['user']['session']->fields['created']->null = true;
+  settings::$data['entities']['user']['session']->fields['created']->default = null;
   settings::$data['entities']['user']['session']->fields['data'] = new \stdClass();
   settings::$data['entities']['user']['session']->fields['data']->type = 'longblob';
   settings::$data['entities']['user']['session']->primary_keys['id'] = 'id';
