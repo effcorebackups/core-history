@@ -114,6 +114,8 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['page']['page_n']->styles['style_form']->file = 'misc/form.css';
   settings::$data['pages']['page']['page_n']->styles['style_console'] = new \stdClass();
   settings::$data['pages']['page']['page_n']->styles['style_console']->file = 'misc/console.css';
+  settings::$data['pages']['page']['page_n']->scripts['script_page'] = new \stdClass();
+  settings::$data['pages']['page']['page_n']->scripts['script_page']->file = 'misc/script.js';
   settings::$data['pages']['page']['page_n']->content['all_messages'] = new \effectivecore\messages();
   settings::$data['pages']['page']['page_n']->content['all_messages']->type = 'messages';
   settings::$data['pages']['page']['page_n']->content['all_messages']->region = 'messages';
