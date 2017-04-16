@@ -110,10 +110,13 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['page']['page_n']->url->match = '%.*%';
   settings::$data['pages']['page']['page_n']->styles['style_page'] = new \stdClass();
   settings::$data['pages']['page']['page_n']->styles['style_page']->file = 'misc/page.css';
+  settings::$data['pages']['page']['page_n']->styles['style_page']->media = 'all';
   settings::$data['pages']['page']['page_n']->styles['style_form'] = new \stdClass();
   settings::$data['pages']['page']['page_n']->styles['style_form']->file = 'misc/form.css';
+  settings::$data['pages']['page']['page_n']->styles['style_form']->media = 'all';
   settings::$data['pages']['page']['page_n']->styles['style_console'] = new \stdClass();
   settings::$data['pages']['page']['page_n']->styles['style_console']->file = 'misc/console.css';
+  settings::$data['pages']['page']['page_n']->styles['style_console']->media = 'all';
   settings::$data['pages']['page']['page_n']->scripts['script_page'] = new \stdClass();
   settings::$data['pages']['page']['page_n']->scripts['script_page']->file = 'misc/script.js';
   settings::$data['pages']['page']['page_n']->content['all_messages'] = new \effectivecore\messages();
@@ -124,6 +127,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['tree']['page_n']->url->match = '%.*%';
   settings::$data['pages']['tree']['page_n']->styles['style_tree'] = new \stdClass();
   settings::$data['pages']['tree']['page_n']->styles['style_tree']->file = 'misc/tree.css';
+  settings::$data['pages']['tree']['page_n']->styles['style_tree']->media = 'all';
   settings::$data['pages']['tree']['page_n']->content['tree_main'] = new \stdClass();
   settings::$data['pages']['tree']['page_n']->content['tree_main']->type = 'link';
   settings::$data['pages']['tree']['page_n']->content['tree_main']->entity = 'trees/core/main';
