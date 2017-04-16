@@ -502,6 +502,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['tokens']['user']['profile_edit_title']->handler = '\\effectivecore\\modules\\user\\events_token::on_replace';
   settings::$data['entities']['user']['user'] = new \effectivecore\entity();
   settings::$data['entities']['user']['user']->name = 'user';
+  settings::$data['entities']['user']['user']->charset = 'utf8';
   settings::$data['entities']['user']['user']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['id']->type = 'int';
   settings::$data['entities']['user']['user']->fields['id']->unsigned = true;
@@ -518,6 +519,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['user']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['session'] = new \effectivecore\entity();
   settings::$data['entities']['user']['session']->name = 'session';
+  settings::$data['entities']['user']['session']->charset = 'utf8';
   settings::$data['entities']['user']['session']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['session']->fields['id']->type = 'int';
   settings::$data['entities']['user']['session']->fields['id']->unsigned = true;
