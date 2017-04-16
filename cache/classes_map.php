@@ -87,6 +87,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\entity']->classname = 'entity';
   cache::$data['classes_map']['effectivecore\entity']->parents = [];
   cache::$data['classes_map']['effectivecore\entity']->file = 'modules/core/classes/global--entity.php';
+  cache::$data['classes_map']['effectivecore\entity_instance'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\entity_instance']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\entity_instance']->classname = 'entity_instance';
+  cache::$data['classes_map']['effectivecore\entity_instance']->parents = [];
+  cache::$data['classes_map']['effectivecore\entity_instance']->file = 'modules/core/classes/global--entity_instance.php';
   cache::$data['classes_map']['effectivecore\file'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\file']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\file']->classname = 'file';
