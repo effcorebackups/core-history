@@ -74,6 +74,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['module']['user']->on_init->weight = -80;
   settings::$data['module']['user']->on_install = new \stdClass();
   settings::$data['module']['user']->on_install->handler = '\\effectivecore\\modules\\user\\events_module::on_install';
+  settings::$data['module']['user']->on_install->weight = 0;
   settings::$data['module']['user']->path = 'modules/user';
   settings::$data['pages']['core']['page_front'] = new \stdClass();
   settings::$data['pages']['core']['page_front']->title = 'Front page';
@@ -505,7 +506,6 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['user']->fields['id']->type = 'int';
   settings::$data['entities']['user']['user']->fields['id']->unsigned = true;
   settings::$data['entities']['user']['user']->fields['id']->auto_increment = true;
-  settings::$data['entities']['user']['user']->fields['id']->primary_key = true;
   settings::$data['entities']['user']['user']->fields['email'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['email']->type = 'varchar';
   settings::$data['entities']['user']['user']->fields['email']->size = 255;
@@ -513,7 +513,21 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['user']->fields['created']->type = 'timestamp';
   settings::$data['entities']['user']['user']->fields['is_locked'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['is_locked']->type = 'int';
+  settings::$data['entities']['user']['user']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['session'] = new \effectivecore\entity();
+  settings::$data['entities']['user']['session']->type = 'session';
+  settings::$data['entities']['user']['session']->fields['id'] = new \stdClass();
+  settings::$data['entities']['user']['session']->fields['id']->type = 'int';
+  settings::$data['entities']['user']['session']->fields['id']->unsigned = true;
+  settings::$data['entities']['user']['session']->fields['id']->auto_increment = true;
+  settings::$data['entities']['user']['session']->fields['user_id'] = new \stdClass();
+  settings::$data['entities']['user']['session']->fields['user_id']->type = 'int';
+  settings::$data['entities']['user']['session']->fields['user_id']->unsigned = true;
+  settings::$data['entities']['user']['session']->fields['created'] = new \stdClass();
+  settings::$data['entities']['user']['session']->fields['created']->type = 'timestamp';
+  settings::$data['entities']['user']['session']->fields['data'] = new \stdClass();
+  settings::$data['entities']['user']['session']->fields['data']->type = 'longblob';
+  settings::$data['entities']['user']['session']->primary_keys['id'] = 'id';
   settings::$data['forms']['user']['form_user_login'] = new \effectivecore\form();
   settings::$data['forms']['user']['form_user_login']->form_args = [];
   settings::$data['forms']['user']['form_user_login']->post_args = [];
