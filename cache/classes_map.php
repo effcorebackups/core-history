@@ -92,6 +92,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\file']->classname = 'file';
   cache::$data['classes_map']['effectivecore\file']->parents = [];
   cache::$data['classes_map']['effectivecore\file']->file = 'modules/core/classes/global--file.php';
+  cache::$data['classes_map']['effectivecore\instance'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\instance']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\instance']->classname = 'instance';
+  cache::$data['classes_map']['effectivecore\instance']->parents = [];
+  cache::$data['classes_map']['effectivecore\instance']->file = 'modules/core/classes/global--instance.php';
   cache::$data['classes_map']['effectivecore\message'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\message']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\message']->classname = 'message';
