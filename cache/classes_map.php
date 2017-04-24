@@ -202,6 +202,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\modules\storage\events_module']->classname = 'events_module';
   cache::$data['classes_map']['effectivecore\modules\storage\events_module']->parents['effectivecore\events_module'] = 'effectivecore\\events_module';
   cache::$data['classes_map']['effectivecore\modules\storage\events_module']->file = 'modules/storage/classes/abstract--events_module.php';
+  cache::$data['classes_map']['effectivecore\modules\storage\storage'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\modules\storage\storage']->namespace = 'effectivecore\\modules\\storage';
+  cache::$data['classes_map']['effectivecore\modules\storage\storage']->classname = 'storage';
+  cache::$data['classes_map']['effectivecore\modules\storage\storage']->parents = [];
+  cache::$data['classes_map']['effectivecore\modules\storage\storage']->file = 'modules/storage/classes/abstract--storage.php';
   cache::$data['classes_map']['effectivecore\modules\tree\events_module'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\modules\tree\events_module']->namespace = 'effectivecore\\modules\\tree';
   cache::$data['classes_map']['effectivecore\modules\tree\events_module']->classname = 'events_module';

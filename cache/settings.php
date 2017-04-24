@@ -40,7 +40,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['module']['storage'] = new \stdClass();
   settings::$data['module']['storage']->id = 'storage';
   settings::$data['module']['storage']->title = 'Storage';
-  settings::$data['module']['storage']->description = 'Module for database storage support.';
+  settings::$data['module']['storage']->description = 'Module for storages support.';
   settings::$data['module']['storage']->version = '1-0';
   settings::$data['module']['storage']->is_embed = true;
   settings::$data['module']['storage']->is_always_on = true;
@@ -252,7 +252,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['translate']['page'] = new \stdClass();
   settings::$data['translate']['page']->ru['Module for working with pages.'] = 'Модуль работы со страницами.';
   settings::$data['translate']['storage'] = new \stdClass();
-  settings::$data['translate']['storage']->ru['Module for database storage support.'] = 'Модуль поддержки хранилища баз данных.';
+  settings::$data['translate']['storage']->ru['Module for storages support.'] = 'Модуль поддержки хранилищ данных.';
   settings::$data['translate']['tree'] = new \stdClass();
   settings::$data['translate']['tree']->ru['Module for working with trees (hierarchical structures).'] = 'Модуль работы с деревьями (иерархическими структурами).';
   settings::$data['translate']['user'] = new \stdClass();
@@ -484,6 +484,14 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['db']['storage']->test->username = 'root';
   settings::$data['db']['storage']->test->password = 123;
   settings::$data['db']['storage']->test->table_prefix = 'ec_';
+  settings::$data['storages']['storage']['storage_db_main'] = new \stdClass();
+  settings::$data['storages']['storage']['storage_db_main']->id = 'db_main';
+  settings::$data['storages']['storage']['storage_db_main']->type = 'sql';
+  settings::$data['storages']['storage']['storage_db_main']->name = 'effectivecore';
+  settings::$data['storages']['storage']['storage_db_main']->host = '127.0.0.1';
+  settings::$data['storages']['storage']['storage_db_main']->username = 'root';
+  settings::$data['storages']['storage']['storage_db_main']->password = 123;
+  settings::$data['storages']['storage']['storage_db_main']->driver = 'mysql';
   settings::$data['tokens']['tree']['nav_bg_color'] = new \stdClass();
   settings::$data['tokens']['tree']['nav_bg_color']->match = '%%_nav_bg_color';
   settings::$data['tokens']['tree']['nav_bg_color']->type = 'text';
@@ -506,7 +514,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['tokens']['user']['profile_edit_title']->handler = '\\effectivecore\\modules\\user\\events_token::on_replace';
   settings::$data['entities']['user']['user'] = new \effectivecore\entity();
   settings::$data['entities']['user']['user']->name = 'user';
-  settings::$data['entities']['user']['user']->storage = 'dbsql';
+  settings::$data['entities']['user']['user']->storage = 'db_main';
   settings::$data['entities']['user']['user']->charset = 'utf8';
   settings::$data['entities']['user']['user']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['id']->type = 'int';
@@ -531,7 +539,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['entities']['user']['user']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['session'] = new \effectivecore\entity();
   settings::$data['entities']['user']['session']->name = 'session';
-  settings::$data['entities']['user']['session']->storage = 'dbsql';
+  settings::$data['entities']['user']['session']->storage = 'db_main';
   settings::$data['entities']['user']['session']->charset = 'utf8';
   settings::$data['entities']['user']['session']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['session']->fields['id']->type = 'varchar';
@@ -550,7 +558,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['entities']['user']['session']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['role'] = new \effectivecore\entity();
   settings::$data['entities']['user']['role']->name = 'role';
-  settings::$data['entities']['user']['role']->storage = 'dbsql';
+  settings::$data['entities']['user']['role']->storage = 'db_main';
   settings::$data['entities']['user']['role']->charset = 'utf8';
   settings::$data['entities']['user']['role']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['role']->fields['id']->type = 'varchar';
@@ -567,7 +575,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['entities']['user']['role']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['permission'] = new \effectivecore\entity();
   settings::$data['entities']['user']['permission']->name = 'permission';
-  settings::$data['entities']['user']['permission']->storage = 'dbsql';
+  settings::$data['entities']['user']['permission']->storage = 'db_main';
   settings::$data['entities']['user']['permission']->charset = 'utf8';
   settings::$data['entities']['user']['permission']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['permission']->fields['id']->type = 'varchar';
@@ -580,7 +588,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['entities']['user']['permission']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['role_ws_user'] = new \effectivecore\entity();
   settings::$data['entities']['user']['role_ws_user']->name = 'role_ws_user';
-  settings::$data['entities']['user']['role_ws_user']->storage = 'dbsql';
+  settings::$data['entities']['user']['role_ws_user']->storage = 'db_main';
   settings::$data['entities']['user']['role_ws_user']->charset = 'utf8';
   settings::$data['entities']['user']['role_ws_user']->fields['role_id'] = new \stdClass();
   settings::$data['entities']['user']['role_ws_user']->fields['role_id']->type = 'varchar';
@@ -595,7 +603,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['entities']['user']['role_ws_user']->primary_keys['user_id'] = 'user_id';
   settings::$data['entities']['user']['role_ws_permission'] = new \effectivecore\entity();
   settings::$data['entities']['user']['role_ws_permission']->name = 'role_ws_permission';
-  settings::$data['entities']['user']['role_ws_permission']->storage = 'dbsql';
+  settings::$data['entities']['user']['role_ws_permission']->storage = 'db_main';
   settings::$data['entities']['user']['role_ws_permission']->charset = 'utf8';
   settings::$data['entities']['user']['role_ws_permission']->fields['role_id'] = new \stdClass();
   settings::$data['entities']['user']['role_ws_permission']->fields['role_id']->type = 'varchar';
