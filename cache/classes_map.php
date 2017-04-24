@@ -2,11 +2,6 @@
 
 namespace effectivecore { # cache for classes_map
 
-  cache_factory::$data['classes_map']['effectivecore\console'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\console']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\console']->classname = 'console';
-  cache_factory::$data['classes_map']['effectivecore\console']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\console']->file = 'modules/core/classes/abstract_global--console.php';
   cache_factory::$data['classes_map']['effectivecore\events'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\events']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\events']->classname = 'events';
@@ -76,12 +71,17 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\cache_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\cache_factory']->classname = 'cache_factory';
   cache_factory::$data['classes_map']['effectivecore\cache_factory']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\cache_factory']->file = 'modules/core/classes/gl--factory_cache.php';
+  cache_factory::$data['classes_map']['effectivecore\cache_factory']->file = 'modules/core/classes/gl--factory--cache.php';
+  cache_factory::$data['classes_map']['effectivecore\console_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\console_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\console_factory']->classname = 'console_factory';
+  cache_factory::$data['classes_map']['effectivecore\console_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\console_factory']->file = 'modules/core/classes/gl--factory--console.php';
   cache_factory::$data['classes_map']['effectivecore\core_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\core_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\core_factory']->classname = 'core_factory';
   cache_factory::$data['classes_map']['effectivecore\core_factory']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\core_factory']->file = 'modules/core/classes/gl--factory_core.php';
+  cache_factory::$data['classes_map']['effectivecore\core_factory']->file = 'modules/core/classes/gl--factory--core.php';
   cache_factory::$data['classes_map']['effectivecore\entity'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\entity']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\entity']->classname = 'entity';
