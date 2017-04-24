@@ -687,7 +687,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['forms']['user']['form_user_login']->form_args = [];
   settings_factory::$data['forms']['user']['form_user_login']->post_args = [];
   settings_factory::$data['forms']['user']['form_user_login']->on_submit = new \stdClass();
-  settings_factory::$data['forms']['user']['form_user_login']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_login';
+  settings_factory::$data['forms']['user']['form_user_login']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form_factory::on_submit_user_login';
   settings_factory::$data['forms']['user']['form_user_login']->on_validate = null;
   settings_factory::$data['forms']['user']['form_user_login']->errors = [];
   settings_factory::$data['forms']['user']['form_user_login']->type = 'form';
@@ -748,7 +748,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['forms']['user']['form_user_logout']->form_args = [];
   settings_factory::$data['forms']['user']['form_user_logout']->post_args = [];
   settings_factory::$data['forms']['user']['form_user_logout']->on_submit = new \stdClass();
-  settings_factory::$data['forms']['user']['form_user_logout']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_logout';
+  settings_factory::$data['forms']['user']['form_user_logout']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form_factory::on_submit_user_logout';
   settings_factory::$data['forms']['user']['form_user_logout']->on_validate = null;
   settings_factory::$data['forms']['user']['form_user_logout']->errors = [];
   settings_factory::$data['forms']['user']['form_user_logout']->type = 'form';
@@ -777,7 +777,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['forms']['user']['form_user_n_delete']->form_args = [];
   settings_factory::$data['forms']['user']['form_user_n_delete']->post_args = [];
   settings_factory::$data['forms']['user']['form_user_n_delete']->on_submit = new \stdClass();
-  settings_factory::$data['forms']['user']['form_user_n_delete']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_n_delete';
+  settings_factory::$data['forms']['user']['form_user_n_delete']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form_factory::on_submit_user_n_delete';
   settings_factory::$data['forms']['user']['form_user_n_delete']->on_validate = null;
   settings_factory::$data['forms']['user']['form_user_n_delete']->errors = [];
   settings_factory::$data['forms']['user']['form_user_n_delete']->type = 'form';
@@ -819,7 +819,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['forms']['user']['form_user_n_edit']->form_args = [];
   settings_factory::$data['forms']['user']['form_user_n_edit']->post_args = [];
   settings_factory::$data['forms']['user']['form_user_n_edit']->on_submit = new \stdClass();
-  settings_factory::$data['forms']['user']['form_user_n_edit']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_n_edit';
+  settings_factory::$data['forms']['user']['form_user_n_edit']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form_factory::on_submit_user_n_edit';
   settings_factory::$data['forms']['user']['form_user_n_edit']->on_validate = null;
   settings_factory::$data['forms']['user']['form_user_n_edit']->errors = [];
   settings_factory::$data['forms']['user']['form_user_n_edit']->type = 'form';
@@ -865,7 +865,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['forms']['user']['form_user_register']->form_args = [];
   settings_factory::$data['forms']['user']['form_user_register']->post_args = [];
   settings_factory::$data['forms']['user']['form_user_register']->on_submit = new \stdClass();
-  settings_factory::$data['forms']['user']['form_user_register']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form::on_submit_user_register';
+  settings_factory::$data['forms']['user']['form_user_register']->on_submit->handler = '\\effectivecore\\modules\\user\\events_form_factory::on_submit_user_register';
   settings_factory::$data['forms']['user']['form_user_register']->on_validate = null;
   settings_factory::$data['forms']['user']['form_user_register']->errors = [];
   settings_factory::$data['forms']['user']['form_user_register']->type = 'form';
