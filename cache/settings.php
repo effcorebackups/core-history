@@ -1,6 +1,6 @@
 <?php 
 
-namespace effectivecore { # settings::$data[entity_type][scope]...
+namespace effectivecore { # settings::$data[type][scope]...
 
   settings::$data['file_types']['core']['php'] = new \stdClass();
   settings::$data['file_types']['core']['php']->mime = 'text/html';
@@ -131,7 +131,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['tree']['page_n']->styles['style_tree']->media = 'all';
   settings::$data['pages']['tree']['page_n']->content['tree_main'] = new \stdClass();
   settings::$data['pages']['tree']['page_n']->content['tree_main']->type = 'link';
-  settings::$data['pages']['tree']['page_n']->content['tree_main']->entity = 'trees/core/main';
+  settings::$data['pages']['tree']['page_n']->content['tree_main']->link = 'trees/core/main';
   settings::$data['pages']['tree']['page_n']->content['tree_main']->region = 'nav';
   settings::$data['pages']['user']['page_admin_roles'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_roles']->title = 'Roles';
@@ -168,14 +168,14 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['code_user_n_delete']->region = 'c_1_1';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete'] = new \stdClass();
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->type = 'link';
-  settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->entity = 'forms/user/form_user_n_delete';
+  settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->link = 'forms/user/form_user_n_delete';
   settings::$data['pages']['user']['page_admin_users_delete_n']->content['form_user_n_delete']->region = 'c_1_1';
   settings::$data['pages']['user']['page_n'] = new \stdClass();
   settings::$data['pages']['user']['page_n']->url = new \stdClass();
   settings::$data['pages']['user']['page_n']->url->match = '%.*%';
   settings::$data['pages']['user']['page_n']->content['tree_user'] = new \stdClass();
   settings::$data['pages']['user']['page_n']->content['tree_user']->type = 'link';
-  settings::$data['pages']['user']['page_n']->content['tree_user']->entity = 'trees/user/user';
+  settings::$data['pages']['user']['page_n']->content['tree_user']->link = 'trees/user/user';
   settings::$data['pages']['user']['page_n']->content['tree_user']->region = 'nav';
   settings::$data['pages']['user']['page_user_login'] = new \stdClass();
   settings::$data['pages']['user']['page_user_login']->title = 'Login';
@@ -185,7 +185,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_login']->access->roles['anonymous'] = 'anonymous';
   settings::$data['pages']['user']['page_user_login']->content['form_user_login'] = new \stdClass();
   settings::$data['pages']['user']['page_user_login']->content['form_user_login']->type = 'link';
-  settings::$data['pages']['user']['page_user_login']->content['form_user_login']->entity = 'forms/user/form_user_login';
+  settings::$data['pages']['user']['page_user_login']->content['form_user_login']->link = 'forms/user/form_user_login';
   settings::$data['pages']['user']['page_user_login']->content['form_user_login']->region = 'c_1_1';
   settings::$data['pages']['user']['page_user_logout'] = new \stdClass();
   settings::$data['pages']['user']['page_user_logout']->title = 'Logout from the system';
@@ -195,7 +195,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_logout']->access->roles['registered'] = 'registered';
   settings::$data['pages']['user']['page_user_logout']->content['form_user_login'] = new \stdClass();
   settings::$data['pages']['user']['page_user_logout']->content['form_user_login']->type = 'link';
-  settings::$data['pages']['user']['page_user_logout']->content['form_user_login']->entity = 'forms/user/form_user_logout';
+  settings::$data['pages']['user']['page_user_logout']->content['form_user_login']->link = 'forms/user/form_user_logout';
   settings::$data['pages']['user']['page_user_logout']->content['form_user_login']->region = 'c_1_1';
   settings::$data['pages']['user']['page_user_n'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n']->title = '%%_profile_title';
@@ -223,7 +223,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_n_edit']->content['code_on_page_user_n_edit']->region = 'c_1_1';
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit'] = new \stdClass();
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->type = 'link';
-  settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->entity = 'forms/user/form_user_n_edit';
+  settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->link = 'forms/user/form_user_n_edit';
   settings::$data['pages']['user']['page_user_n_edit']->content['form_user_n_edit']->region = 'c_1_1';
   settings::$data['pages']['user']['page_user_register'] = new \stdClass();
   settings::$data['pages']['user']['page_user_register']->title = 'Register new user';
@@ -233,7 +233,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['pages']['user']['page_user_register']->access->roles['anonymous'] = 'anonymous';
   settings::$data['pages']['user']['page_user_register']->content['form_user_register'] = new \stdClass();
   settings::$data['pages']['user']['page_user_register']->content['form_user_register']->type = 'link';
-  settings::$data['pages']['user']['page_user_register']->content['form_user_register']->entity = 'forms/user/form_user_register';
+  settings::$data['pages']['user']['page_user_register']->content['form_user_register']->link = 'forms/user/form_user_register';
   settings::$data['pages']['user']['page_user_register']->content['form_user_register']->region = 'c_1_1';
   settings::$data['translate']['core'] = new \stdClass();
   settings::$data['translate']['core']->ru['Core module.'] = 'Модуль Core.';
@@ -502,6 +502,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['tokens']['user']['profile_edit_title']->handler = '\\effectivecore\\modules\\user\\events_token::on_replace';
   settings::$data['entities']['user']['user'] = new \effectivecore\entity();
   settings::$data['entities']['user']['user']->name = 'user';
+  settings::$data['entities']['user']['user']->storage = 'dbsql';
   settings::$data['entities']['user']['user']->charset = 'utf8';
   settings::$data['entities']['user']['user']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['user']->fields['id']->type = 'int';
@@ -526,6 +527,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['user']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['session'] = new \effectivecore\entity();
   settings::$data['entities']['user']['session']->name = 'session';
+  settings::$data['entities']['user']['session']->storage = 'dbsql';
   settings::$data['entities']['user']['session']->charset = 'utf8';
   settings::$data['entities']['user']['session']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['session']->fields['id']->type = 'varchar';
@@ -544,6 +546,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['session']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['role'] = new \effectivecore\entity();
   settings::$data['entities']['user']['role']->name = 'role';
+  settings::$data['entities']['user']['role']->storage = 'dbsql';
   settings::$data['entities']['user']['role']->charset = 'utf8';
   settings::$data['entities']['user']['role']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['role']->fields['id']->type = 'varchar';
@@ -560,6 +563,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['role']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['permission'] = new \effectivecore\entity();
   settings::$data['entities']['user']['permission']->name = 'permission';
+  settings::$data['entities']['user']['permission']->storage = 'dbsql';
   settings::$data['entities']['user']['permission']->charset = 'utf8';
   settings::$data['entities']['user']['permission']->fields['id'] = new \stdClass();
   settings::$data['entities']['user']['permission']->fields['id']->type = 'varchar';
@@ -572,6 +576,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['permission']->primary_keys['id'] = 'id';
   settings::$data['entities']['user']['role_ws_user'] = new \effectivecore\entity();
   settings::$data['entities']['user']['role_ws_user']->name = 'role_ws_user';
+  settings::$data['entities']['user']['role_ws_user']->storage = 'dbsql';
   settings::$data['entities']['user']['role_ws_user']->charset = 'utf8';
   settings::$data['entities']['user']['role_ws_user']->fields['role_id'] = new \stdClass();
   settings::$data['entities']['user']['role_ws_user']->fields['role_id']->type = 'varchar';
@@ -586,6 +591,7 @@ namespace effectivecore { # settings::$data[entity_type][scope]...
   settings::$data['entities']['user']['role_ws_user']->primary_keys['user_id'] = 'user_id';
   settings::$data['entities']['user']['role_ws_permission'] = new \effectivecore\entity();
   settings::$data['entities']['user']['role_ws_permission']->name = 'role_ws_permission';
+  settings::$data['entities']['user']['role_ws_permission']->storage = 'dbsql';
   settings::$data['entities']['user']['role_ws_permission']->charset = 'utf8';
   settings::$data['entities']['user']['role_ws_permission']->fields['role_id'] = new \stdClass();
   settings::$data['entities']['user']['role_ws_permission']->fields['role_id']->type = 'varchar';
