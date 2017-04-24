@@ -12,11 +12,6 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\console']->classname = 'console';
   cache::$data['classes_map']['effectivecore\console']->parents = [];
   cache::$data['classes_map']['effectivecore\console']->file = 'modules/core/classes/abstract_global--console.php';
-  cache::$data['classes_map']['effectivecore\core'] = new \stdClass();
-  cache::$data['classes_map']['effectivecore\core']->namespace = 'effectivecore';
-  cache::$data['classes_map']['effectivecore\core']->classname = 'core';
-  cache::$data['classes_map']['effectivecore\core']->parents = [];
-  cache::$data['classes_map']['effectivecore\core']->file = 'modules/core/classes/abstract_global--core.php';
   cache::$data['classes_map']['effectivecore\events'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\events']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\events']->classname = 'events';
@@ -82,6 +77,11 @@ namespace effectivecore { # cache for classes_map
   cache::$data['classes_map']['effectivecore\urls']->classname = 'urls';
   cache::$data['classes_map']['effectivecore\urls']->parents = [];
   cache::$data['classes_map']['effectivecore\urls']->file = 'modules/core/classes/abstract_global--urls.php';
+  cache::$data['classes_map']['effectivecore\core_factory'] = new \stdClass();
+  cache::$data['classes_map']['effectivecore\core_factory']->namespace = 'effectivecore';
+  cache::$data['classes_map']['effectivecore\core_factory']->classname = 'core_factory';
+  cache::$data['classes_map']['effectivecore\core_factory']->parents = [];
+  cache::$data['classes_map']['effectivecore\core_factory']->file = 'modules/core/classes/gl--factory_core.php';
   cache::$data['classes_map']['effectivecore\entity'] = new \stdClass();
   cache::$data['classes_map']['effectivecore\entity']->namespace = 'effectivecore';
   cache::$data['classes_map']['effectivecore\entity']->classname = 'entity';

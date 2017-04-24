@@ -491,6 +491,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['storages']['storage']['storage_db_main']->username = 'root';
   settings::$data['storages']['storage']['storage_db_main']->password = 123;
   settings::$data['storages']['storage']['storage_db_main']->driver = 'mysql';
+  settings::$data['storages']['storage']['storage_db_main']->is_init = null;
   settings::$data['tokens']['tree']['nav_bg_color'] = new \stdClass();
   settings::$data['tokens']['tree']['nav_bg_color']->match = '%%_nav_bg_color';
   settings::$data['tokens']['tree']['nav_bg_color']->type = 'text';
