@@ -2,30 +2,25 @@
 
 namespace effectivecore { # cache for classes_map
 
-  cache_factory::$data['classes_map']['effectivecore\events'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\events']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\events']->classname = 'events';
-  cache_factory::$data['classes_map']['effectivecore\events']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\events']->file = 'modules/core/classes/abstract_global--events.php';
   cache_factory::$data['classes_map']['effectivecore\events_form'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\events_form']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\events_form']->classname = 'events_form';
-  cache_factory::$data['classes_map']['effectivecore\events_form']->parents['events'] = 'events';
+  cache_factory::$data['classes_map']['effectivecore\events_form']->parents['events_factory'] = 'events_factory';
   cache_factory::$data['classes_map']['effectivecore\events_form']->file = 'modules/core/classes/abstract_global--events_form.php';
   cache_factory::$data['classes_map']['effectivecore\events_module'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\events_module']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\events_module']->classname = 'events_module';
-  cache_factory::$data['classes_map']['effectivecore\events_module']->parents['events'] = 'events';
+  cache_factory::$data['classes_map']['effectivecore\events_module']->parents['events_factory'] = 'events_factory';
   cache_factory::$data['classes_map']['effectivecore\events_module']->file = 'modules/core/classes/abstract_global--events_module.php';
   cache_factory::$data['classes_map']['effectivecore\events_page'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\events_page']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\events_page']->classname = 'events_page';
-  cache_factory::$data['classes_map']['effectivecore\events_page']->parents['events'] = 'events';
+  cache_factory::$data['classes_map']['effectivecore\events_page']->parents['events_factory'] = 'events_factory';
   cache_factory::$data['classes_map']['effectivecore\events_page']->file = 'modules/core/classes/abstract_global--events_page.php';
   cache_factory::$data['classes_map']['effectivecore\events_token'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\events_token']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\events_token']->classname = 'events_token';
-  cache_factory::$data['classes_map']['effectivecore\events_token']->parents['events'] = 'events';
+  cache_factory::$data['classes_map']['effectivecore\events_token']->parents['events_factory'] = 'events_factory';
   cache_factory::$data['classes_map']['effectivecore\events_token']->file = 'modules/core/classes/abstract_global--events_token.php';
   cache_factory::$data['classes_map']['effectivecore\entity'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\entity']->namespace = 'effectivecore';
@@ -52,6 +47,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\core_factory']->classname = 'core_factory';
   cache_factory::$data['classes_map']['effectivecore\core_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\core_factory']->file = 'modules/core/classes/gl--factory--core.php';
+  cache_factory::$data['classes_map']['effectivecore\events_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\events_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\events_factory']->classname = 'events_factory';
+  cache_factory::$data['classes_map']['effectivecore\events_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\events_factory']->file = 'modules/core/classes/gl--factory--events.php';
   cache_factory::$data['classes_map']['effectivecore\files_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\files_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\files_factory']->classname = 'files_factory';
