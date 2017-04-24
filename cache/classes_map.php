@@ -57,6 +57,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\files_factory']->classname = 'files_factory';
   cache_factory::$data['classes_map']['effectivecore\files_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\files_factory']->file = 'modules/core/classes/gl--factory--files.php';
+  cache_factory::$data['classes_map']['effectivecore\messages_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\messages_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\messages_factory']->classname = 'messages_factory';
+  cache_factory::$data['classes_map']['effectivecore\messages_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\messages_factory']->file = 'modules/core/classes/gl--factory--messages.php';
   cache_factory::$data['classes_map']['effectivecore\parser_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\parser_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\parser_factory']->classname = 'parser_factory';
@@ -106,7 +111,7 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\messages']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\messages']->classname = 'messages';
   cache_factory::$data['classes_map']['effectivecore\messages']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\messages']->file = 'modules/core/classes/global--messages.php';
+  cache_factory::$data['classes_map']['effectivecore\messages']->file = 'modules/core/classes/gl--messages.php';
   cache_factory::$data['classes_map']['effectivecore\node'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\node']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\node']->classname = 'node';
