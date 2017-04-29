@@ -486,7 +486,8 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['db']['storage']->test->table_prefix = 'ec_';
   settings_factory::$data['storages']['storage']['storage_db_main'] = new \effectivecore\storage_instance();
   settings_factory::$data['storages']['storage']['storage_db_main']->id = 'db_main';
-  settings_factory::$data['storages']['storage']['storage_db_main']->name = 'effectivecore';
+  settings_factory::$data['storages']['storage']['storage_db_main']->connection = null;
+  settings_factory::$data['storages']['storage']['storage_db_main']->directory_name = 'effectivecore';
   settings_factory::$data['storages']['storage']['storage_db_main']->hostname = '127.0.0.1';
   settings_factory::$data['storages']['storage']['storage_db_main']->username = 'root';
   settings_factory::$data['storages']['storage']['storage_db_main']->password = 123;
