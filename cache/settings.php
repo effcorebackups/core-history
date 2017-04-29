@@ -488,11 +488,12 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['storages']['storage']['storage_db_main']->id = 'db_main';
   settings_factory::$data['storages']['storage']['storage_db_main']->connection = null;
   settings_factory::$data['storages']['storage']['storage_db_main']->directory_name = 'effectivecore';
-  settings_factory::$data['storages']['storage']['storage_db_main']->hostname = '127.0.0.1';
-  settings_factory::$data['storages']['storage']['storage_db_main']->username = 'root';
+  settings_factory::$data['storages']['storage']['storage_db_main']->host_name = '127.0.0.1';
+  settings_factory::$data['storages']['storage']['storage_db_main']->user_name = 'root';
   settings_factory::$data['storages']['storage']['storage_db_main']->password = 123;
   settings_factory::$data['storages']['storage']['storage_db_main']->driver = 'mysql';
   settings_factory::$data['storages']['storage']['storage_db_main']->is_init = null;
+  settings_factory::$data['storages']['storage']['storage_db_main']->queries = null;
   settings_factory::$data['tokens']['tree']['nav_bg_color'] = new \stdClass();
   settings_factory::$data['tokens']['tree']['nav_bg_color']->match = '%%_nav_bg_color';
   settings_factory::$data['tokens']['tree']['nav_bg_color']->type = 'text';
