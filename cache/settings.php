@@ -522,7 +522,6 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['user']->fields['id']->type = 'int';
   settings_factory::$data['entities']['user']['user']->fields['id']->size = 11;
   settings_factory::$data['entities']['user']['user']->fields['id']->unsigned = true;
-  settings_factory::$data['entities']['user']['user']->fields['id']->auto_increment = true;
   settings_factory::$data['entities']['user']['user']->fields['id']->not_null = true;
   settings_factory::$data['entities']['user']['user']->fields['password_hash'] = new \stdClass();
   settings_factory::$data['entities']['user']['user']->fields['password_hash']->type = 'varchar';
