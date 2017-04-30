@@ -523,6 +523,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['user']->fields['id']->size = 11;
   settings_factory::$data['entities']['user']['user']->fields['id']->unsigned = true;
   settings_factory::$data['entities']['user']['user']->fields['id']->not_null = true;
+  settings_factory::$data['entities']['user']['user']->fields['id']->auto_increment = true;
   settings_factory::$data['entities']['user']['user']->fields['password_hash'] = new \stdClass();
   settings_factory::$data['entities']['user']['user']->fields['password_hash']->type = 'varchar';
   settings_factory::$data['entities']['user']['user']->fields['password_hash']->size = 255;
@@ -540,6 +541,9 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['user']->indexes['primary'] = new \stdClass();
   settings_factory::$data['entities']['user']['user']->indexes['primary']->type = 'primary key';
   settings_factory::$data['entities']['user']['user']->indexes['primary']->fields['id'] = 'id';
+  settings_factory::$data['entities']['user']['user']->indexes['unique_email'] = new \stdClass();
+  settings_factory::$data['entities']['user']['user']->indexes['unique_email']->type = 'unique key';
+  settings_factory::$data['entities']['user']['user']->indexes['unique_email']->fields['email'] = 'email';
   settings_factory::$data['entities']['user']['session'] = new \effectivecore\entity();
   settings_factory::$data['entities']['user']['session']->name = 'session';
   settings_factory::$data['entities']['user']['session']->storage_id = 'db_main';
