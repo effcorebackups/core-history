@@ -551,6 +551,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['session']->fields['id'] = new \stdClass();
   settings_factory::$data['entities']['user']['session']->fields['id']->type = 'varchar';
   settings_factory::$data['entities']['user']['session']->fields['id']->size = 255;
+  settings_factory::$data['entities']['user']['session']->fields['id']->not_null = true;
   settings_factory::$data['entities']['user']['session']->fields['user_id'] = new \stdClass();
   settings_factory::$data['entities']['user']['session']->fields['user_id']->type = 'int';
   settings_factory::$data['entities']['user']['session']->fields['user_id']->size = 11;
@@ -558,7 +559,8 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['session']->fields['user_id']->not_null = true;
   settings_factory::$data['entities']['user']['session']->fields['created'] = new \stdClass();
   settings_factory::$data['entities']['user']['session']->fields['created']->type = 'timestamp';
-  settings_factory::$data['entities']['user']['session']->fields['created']->null = true;
+  settings_factory::$data['entities']['user']['session']->fields['created']->not_null = true;
+  settings_factory::$data['entities']['user']['session']->fields['created']->default = 'current_timestamp';
   settings_factory::$data['entities']['user']['session']->fields['data'] = new \stdClass();
   settings_factory::$data['entities']['user']['session']->fields['data']->type = 'longblob';
   settings_factory::$data['entities']['user']['session']->fields['data']->null = true;
@@ -580,7 +582,8 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['role']->fields['is_embed'] = new \stdClass();
   settings_factory::$data['entities']['user']['role']->fields['is_embed']->type = 'int';
   settings_factory::$data['entities']['user']['role']->fields['is_embed']->size = 1;
-  settings_factory::$data['entities']['user']['role']->fields['is_embed']->null = true;
+  settings_factory::$data['entities']['user']['role']->fields['is_embed']->not_null = true;
+  settings_factory::$data['entities']['user']['role']->fields['is_embed']->default = 0;
   settings_factory::$data['entities']['user']['role']->storage_id = 'db_main';
   settings_factory::$data['entities']['user']['role']->charset = 'utf8';
   settings_factory::$data['entities']['user']['role']->indexes['primary'] = new \stdClass();
