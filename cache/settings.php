@@ -531,12 +531,13 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['user']->fields['password_hash']->size = 255;
   settings_factory::$data['entities']['user']['user']->fields['created'] = new \stdClass();
   settings_factory::$data['entities']['user']['user']->fields['created']->type = 'timestamp';
-  settings_factory::$data['entities']['user']['user']->fields['created']->null = true;
+  settings_factory::$data['entities']['user']['user']->fields['created']->not_null = true;
   settings_factory::$data['entities']['user']['user']->fields['created']->default = 'current_timestamp';
   settings_factory::$data['entities']['user']['user']->fields['is_locked'] = new \stdClass();
   settings_factory::$data['entities']['user']['user']->fields['is_locked']->type = 'int';
   settings_factory::$data['entities']['user']['user']->fields['is_locked']->size = 1;
-  settings_factory::$data['entities']['user']['user']->fields['is_locked']->null = true;
+  settings_factory::$data['entities']['user']['user']->fields['is_locked']->not_null = true;
+  settings_factory::$data['entities']['user']['user']->fields['is_locked']->default = 0;
   settings_factory::$data['entities']['user']['user']->storage_id = 'db_main';
   settings_factory::$data['entities']['user']['user']->charset = 'utf8';
   settings_factory::$data['entities']['user']['user']->indexes['primary'] = new \stdClass();
