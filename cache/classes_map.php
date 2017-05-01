@@ -17,6 +17,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\core_factory']->classname = 'core_factory';
   cache_factory::$data['classes_map']['effectivecore\core_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\core_factory']->file = 'modules/core/classes/gl--factory--core.php';
+  cache_factory::$data['classes_map']['effectivecore\entity_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\entity_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\entity_factory']->classname = 'entity_factory';
+  cache_factory::$data['classes_map']['effectivecore\entity_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\entity_factory']->file = 'modules/core/classes/gl--factory--entity.php';
   cache_factory::$data['classes_map']['effectivecore\events_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\events_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\events_factory']->classname = 'events_factory';
