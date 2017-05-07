@@ -277,35 +277,5 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\modules\user\user_factory']->classname = 'user_factory';
   cache_factory::$data['classes_map']['effectivecore\modules\user\user_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\modules\user\user_factory']->file = 'modules/user/classes/factory--user.php';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_permission'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_permission']->namespace = 'effectivecore\\modules\\user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_permission']->classname = 'table_permission';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_permission']->parents['effectivecore\modules\storage\db_table_factory'] = 'effectivecore\\modules\\storage\\db_table_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_permission']->file = 'modules/user/tables/table--permission.php';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role']->namespace = 'effectivecore\\modules\\user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role']->classname = 'table_role';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role']->parents['effectivecore\modules\storage\db_table_factory'] = 'effectivecore\\modules\\storage\\db_table_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role']->file = 'modules/user/tables/table--role.php';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_permission'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_permission']->namespace = 'effectivecore\\modules\\user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_permission']->classname = 'table_role_by_permission';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_permission']->parents['effectivecore\modules\storage\db_table_factory'] = 'effectivecore\\modules\\storage\\db_table_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_permission']->file = 'modules/user/tables/table--role_by_permission.php';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_user'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_user']->namespace = 'effectivecore\\modules\\user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_user']->classname = 'table_role_by_user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_user']->parents['effectivecore\modules\storage\db_table_factory'] = 'effectivecore\\modules\\storage\\db_table_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_role_by_user']->file = 'modules/user/tables/table--role_by_user.php';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_session'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_session']->namespace = 'effectivecore\\modules\\user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_session']->classname = 'table_session';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_session']->parents['effectivecore\modules\storage\db_table_factory'] = 'effectivecore\\modules\\storage\\db_table_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_session']->file = 'modules/user/tables/table--session.php';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_user'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_user']->namespace = 'effectivecore\\modules\\user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_user']->classname = 'table_user';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_user']->parents['effectivecore\modules\storage\db_table_factory'] = 'effectivecore\\modules\\storage\\db_table_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\user\table_user']->file = 'modules/user/tables/table--user.php';
 
 }
