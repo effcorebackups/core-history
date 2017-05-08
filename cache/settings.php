@@ -141,7 +141,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['pages']['user']['page_admin_users']->content['block_users']->handler = '\\effectivecore\\modules\\user\\events_page_factory::on_show_admin_users';
   settings_factory::$data['pages']['user']['page_admin_users']->content['block_users']->region = 'c_1_1';
   settings_factory::$data['pages']['user']['page_admin_users_delete_n'] = new \stdClass();
-  settings_factory::$data['pages']['user']['page_admin_users_delete_n']->title = 'Delete user \"%%_user_email\"?';
+  settings_factory::$data['pages']['user']['page_admin_users_delete_n']->title = 'Delete user %%_context_user_mail:4?';
   settings_factory::$data['pages']['user']['page_admin_users_delete_n']->url = new \stdClass();
   settings_factory::$data['pages']['user']['page_admin_users_delete_n']->url->match = '%^/admin/users/delete/[0-9]+$%';
   settings_factory::$data['pages']['user']['page_admin_users_delete_n']->url->args['user_id'] = 4;
@@ -183,7 +183,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['pages']['user']['page_user_logout']->content['form_user_login']->link = 'forms/user/form_user_logout';
   settings_factory::$data['pages']['user']['page_user_logout']->content['form_user_login']->region = 'c_1_1';
   settings_factory::$data['pages']['user']['page_user_n'] = new \stdClass();
-  settings_factory::$data['pages']['user']['page_user_n']->title = '%%_profile_title';
+  settings_factory::$data['pages']['user']['page_user_n']->title = '%%_context_user_mail:2 profile';
   settings_factory::$data['pages']['user']['page_user_n']->url = new \stdClass();
   settings_factory::$data['pages']['user']['page_user_n']->url->match = '%^/user/[0-9]+$%';
   settings_factory::$data['pages']['user']['page_user_n']->url->args['user_id'] = 2;
@@ -195,7 +195,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['pages']['user']['page_user_n']->content['block_user_n']->handler = '\\effectivecore\\modules\\user\\events_page_factory::on_show_user_n';
   settings_factory::$data['pages']['user']['page_user_n']->content['block_user_n']->region = 'c_1_1';
   settings_factory::$data['pages']['user']['page_user_n_edit'] = new \stdClass();
-  settings_factory::$data['pages']['user']['page_user_n_edit']->title = '%%_profile_edit_title';
+  settings_factory::$data['pages']['user']['page_user_n_edit']->title = '%%_context_user_mail:2 edit profile';
   settings_factory::$data['pages']['user']['page_user_n_edit']->url = new \stdClass();
   settings_factory::$data['pages']['user']['page_user_n_edit']->url->match = '%^/user/[0-9]+/edit$%';
   settings_factory::$data['pages']['user']['page_user_n_edit']->url->args['user_id'] = 2;
@@ -506,14 +506,10 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['tokens']['user']['user_email']->match = '%%_user_email';
   settings_factory::$data['tokens']['user']['user_email']->type = 'code';
   settings_factory::$data['tokens']['user']['user_email']->handler = '\\effectivecore\\modules\\user\\events_token_factory::on_replace';
-  settings_factory::$data['tokens']['user']['profile_title'] = new \stdClass();
-  settings_factory::$data['tokens']['user']['profile_title']->match = '%%_profile_title';
-  settings_factory::$data['tokens']['user']['profile_title']->type = 'code';
-  settings_factory::$data['tokens']['user']['profile_title']->handler = '\\effectivecore\\modules\\user\\events_token_factory::on_replace';
-  settings_factory::$data['tokens']['user']['profile_edit_title'] = new \stdClass();
-  settings_factory::$data['tokens']['user']['profile_edit_title']->match = '%%_profile_edit_title';
-  settings_factory::$data['tokens']['user']['profile_edit_title']->type = 'code';
-  settings_factory::$data['tokens']['user']['profile_edit_title']->handler = '\\effectivecore\\modules\\user\\events_token_factory::on_replace';
+  settings_factory::$data['tokens']['user']['context_user_mail'] = new \stdClass();
+  settings_factory::$data['tokens']['user']['context_user_mail']->match = '%%_context_user_mail';
+  settings_factory::$data['tokens']['user']['context_user_mail']->type = 'code';
+  settings_factory::$data['tokens']['user']['context_user_mail']->handler = '\\effectivecore\\modules\\user\\events_token_factory::on_replace';
   settings_factory::$data['entities']['user']['user'] = new \effectivecore\entity();
   settings_factory::$data['entities']['user']['user']->name = 'user';
   settings_factory::$data['entities']['user']['user']->fields = new \stdClass();
