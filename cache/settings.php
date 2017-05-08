@@ -534,11 +534,11 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities']['user']['user']->fields->created->type = 'timestamp';
   settings_factory::$data['entities']['user']['user']->fields->created->not_null = true;
   settings_factory::$data['entities']['user']['user']->fields->created->default = 'current_timestamp';
-  settings_factory::$data['entities']['user']['user']->fields->is_locked = new \stdClass();
-  settings_factory::$data['entities']['user']['user']->fields->is_locked->type = 'int';
-  settings_factory::$data['entities']['user']['user']->fields->is_locked->size = 1;
-  settings_factory::$data['entities']['user']['user']->fields->is_locked->not_null = true;
-  settings_factory::$data['entities']['user']['user']->fields->is_locked->default = 0;
+  settings_factory::$data['entities']['user']['user']->fields->is_embed = new \stdClass();
+  settings_factory::$data['entities']['user']['user']->fields->is_embed->type = 'int';
+  settings_factory::$data['entities']['user']['user']->fields->is_embed->size = 1;
+  settings_factory::$data['entities']['user']['user']->fields->is_embed->not_null = true;
+  settings_factory::$data['entities']['user']['user']->fields->is_embed->default = 0;
   settings_factory::$data['entities']['user']['user']->storage_id = 'db_main';
   settings_factory::$data['entities']['user']['user']->charset = 'utf8';
   settings_factory::$data['entities']['user']['user']->indexes['primary'] = new \stdClass();
@@ -649,7 +649,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['entities_instances']['user']['user_1']->values['id'] = 1;
   settings_factory::$data['entities_instances']['user']['user_1']->values['email'] = 'admin@example.com';
   settings_factory::$data['entities_instances']['user']['user_1']->values['password_hash'] = '8cb2237d0679ca88db6464eac60da96345513964';
-  settings_factory::$data['entities_instances']['user']['user_1']->values['is_locked'] = 1;
+  settings_factory::$data['entities_instances']['user']['user_1']->values['is_embed'] = 1;
   settings_factory::$data['entities_instances']['user']['user_2'] = new \effectivecore\entity_instance();
   settings_factory::$data['entities_instances']['user']['user_2']->entity = new \effectivecore\linker();
   settings_factory::$data['entities_instances']['user']['user_2']->entity->npath = 'entities/user/user';
