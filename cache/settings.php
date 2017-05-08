@@ -226,9 +226,10 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['core']->ru['Administer'] = 'Администрирование';
   settings_factory::$data['translate']['core']->ru['created'] = 'создано';
   settings_factory::$data['translate']['core']->ru['Created'] = 'Создано';
-  settings_factory::$data['translate']['core']->ru['delete'] = 'удалить';
   settings_factory::$data['translate']['core']->ru['Description'] = 'Описание';
-  settings_factory::$data['translate']['core']->ru['edit'] = 'ред.';
+  settings_factory::$data['translate']['core']->ru['view'] = 'просмотреть';
+  settings_factory::$data['translate']['core']->ru['edit'] = 'изменить';
+  settings_factory::$data['translate']['core']->ru['delete'] = 'удалить';
   settings_factory::$data['translate']['core']->ru['Front page'] = 'Главная страница';
   settings_factory::$data['translate']['core']->ru['Generation time'] = 'Время генерации';
   settings_factory::$data['translate']['core']->ru['Home'] = 'Дом';
@@ -247,7 +248,6 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['core']->ru['Total'] = 'Всего';
   settings_factory::$data['translate']['core']->ru['Value'] = 'Значение';
   settings_factory::$data['translate']['core']->ru['Version'] = 'Версия';
-  settings_factory::$data['translate']['core']->ru['view'] = 'смотреть';
   settings_factory::$data['translate']['core']->ru['Yes'] = 'Да';
   settings_factory::$data['translate']['page'] = new \stdClass();
   settings_factory::$data['translate']['page']->ru['Module for working with pages.'] = 'Модуль работы со страницами.';
