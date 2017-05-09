@@ -212,11 +212,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->classname = 'storage_factory';
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->file = 'modules/storage/classes/factory--storage.php';
-  cache_factory::$data['classes_map']['effectivecore\storage_instance'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\storage_instance']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\storage_instance']->classname = 'storage_instance';
-  cache_factory::$data['classes_map']['effectivecore\storage_instance']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\storage_instance']->file = 'modules/storage/classes/gl--storage_instance.php';
+  cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->classname = 'storage_pdo_instance';
+  cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->file = 'modules/storage/classes/gl--storage_instance.php';
   cache_factory::$data['classes_map']['effectivecore\modules\tree\events_module_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\modules\tree\events_module_factory']->namespace = 'effectivecore\\modules\\tree';
   cache_factory::$data['classes_map']['effectivecore\modules\tree\events_module_factory']->classname = 'events_module_factory';

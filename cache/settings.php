@@ -469,7 +469,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['templates']['tree']['tree_item'] = 'templates/template--tree_item.html';
   settings_factory::$data['templates']['tree']['tree_item_self'] = 'templates/template--tree_item_self.html';
   settings_factory::$data['templates']['tree']['tree_item_children'] = 'templates/template--tree_item_children.html';
-  settings_factory::$data['storages']['storage']['storage_db_main'] = new \effectivecore\storage_instance();
+  settings_factory::$data['storages']['storage']['storage_db_main'] = new \effectivecore\storage_pdo_instance();
   settings_factory::$data['storages']['storage']['storage_db_main']->id = 'db_main';
   settings_factory::$data['storages']['storage']['storage_db_main']->connection = null;
   settings_factory::$data['storages']['storage']['storage_db_main']->directory_name = 'effectivecore';
