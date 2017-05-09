@@ -77,11 +77,6 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\token_factory']->classname = 'token_factory';
   cache_factory::$data['classes_map']['effectivecore\token_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\token_factory']->file = 'modules/core/classes/gl--factory--token.php';
-  cache_factory::$data['classes_map']['effectivecore\translate_factory'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\translate_factory']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\translate_factory']->classname = 'translate_factory';
-  cache_factory::$data['classes_map']['effectivecore\translate_factory']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\translate_factory']->file = 'modules/core/classes/gl--factory--translate.php';
   cache_factory::$data['classes_map']['effectivecore\urls_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\urls_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\urls_factory']->classname = 'urls_factory';
@@ -217,6 +212,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->classname = 'storage_pdo_instance';
   cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\storage_pdo_instance']->file = 'modules/storage/classes/gl--storage_pdo_instance.php';
+  cache_factory::$data['classes_map']['effectivecore\translate_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\translate_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\translate_factory']->classname = 'translate_factory';
+  cache_factory::$data['classes_map']['effectivecore\translate_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\translate_factory']->file = 'modules/translate/classes/gl--factory--translate.php';
   cache_factory::$data['classes_map']['effectivecore\modules\tree\events_module_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\modules\tree\events_module_factory']->namespace = 'effectivecore\\modules\\tree';
   cache_factory::$data['classes_map']['effectivecore\modules\tree\events_module_factory']->classname = 'events_module_factory';
