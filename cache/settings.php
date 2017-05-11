@@ -5,9 +5,6 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['file_types']['core']['php'] = new \stdClass();
   settings_factory::$data['file_types']['core']['php']->mime = 'text/html';
   settings_factory::$data['file_types']['core']['php']->protected = 1;
-  settings_factory::$data['file_types']['core']['_s'] = new \stdClass();
-  settings_factory::$data['file_types']['core']['_s']->mime = 'text/settings';
-  settings_factory::$data['file_types']['core']['_s']->protected = 1;
   settings_factory::$data['file_types']['core']['css'] = new \stdClass();
   settings_factory::$data['file_types']['core']['css']->mime = 'text/css';
   settings_factory::$data['file_types']['core']['css']->use_tokens = 1;
@@ -21,6 +18,9 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['file_types']['core']['jpg']->mime = 'image/jpeg';
   settings_factory::$data['file_types']['core']['png'] = new \stdClass();
   settings_factory::$data['file_types']['core']['png']->mime = 'image/png';
+  settings_factory::$data['file_types']['storage']['_s'] = new \stdClass();
+  settings_factory::$data['file_types']['storage']['_s']->mime = 'text/settings';
+  settings_factory::$data['file_types']['storage']['_s']->protected = 1;
   settings_factory::$data['module']['core'] = new \stdClass();
   settings_factory::$data['module']['core']->id = 'core';
   settings_factory::$data['module']['core']->title = 'Core';
@@ -423,6 +423,8 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['storages']['storage']['storage_db_main']->driver = 'mysql';
   settings_factory::$data['storages']['storage']['storage_db_main']->is_init = false;
   settings_factory::$data['storages']['storage']['storage_db_main']->queries = [];
+  settings_factory::$data['storages']['storage']['storage_settings'] = new \effectivecore\storage_settings_instance();
+  settings_factory::$data['storages']['storage']['storage_settings']->id = 'settings';
   settings_factory::$data['translate']['translate'] = new \stdClass();
   settings_factory::$data['translate']['translate']->ru['User profile (%%_context_user_mail-2)'] = 'Профиль пользователя (%%_context_user_mail-2)';
   settings_factory::$data['translate']['translate']->ru['Edit profile (%%_context_user_mail-2)'] = 'Редактировать профиль (%%_context_user_mail-2)';
