@@ -57,11 +57,6 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\messages_factory']->classname = 'messages_factory';
   cache_factory::$data['classes_map']['effectivecore\messages_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\messages_factory']->file = 'modules/core/classes/gl--factory--messages.php';
-  cache_factory::$data['classes_map']['effectivecore\parser_factory'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\parser_factory']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\parser_factory']->classname = 'parser_factory';
-  cache_factory::$data['classes_map']['effectivecore\parser_factory']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\parser_factory']->file = 'modules/core/classes/gl--factory--parser.php';
   cache_factory::$data['classes_map']['effectivecore\timer_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\timer_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\timer_factory']->classname = 'timer_factory';
@@ -202,6 +197,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->classname = 'storage_factory';
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->file = 'modules/storage/classes/factory--storage.php';
+  cache_factory::$data['classes_map']['effectivecore\parser_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\parser_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\parser_factory']->classname = 'parser_factory';
+  cache_factory::$data['classes_map']['effectivecore\parser_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\parser_factory']->file = 'modules/storage/classes/gl--factory--parser.php';
   cache_factory::$data['classes_map']['effectivecore\settings_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\settings_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\settings_factory']->classname = 'settings_factory';

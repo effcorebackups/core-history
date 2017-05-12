@@ -425,6 +425,11 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['storages']['storage']['storage_db_main']->queries = [];
   settings_factory::$data['storages']['storage']['storage_settings'] = new \effectivecore\storage_settings_instance();
   settings_factory::$data['storages']['storage']['storage_settings']->id = 'settings';
+  settings_factory::$data['languages']['translate']['ru'] = new \stdClass();
+  settings_factory::$data['languages']['translate']['ru']->code = 'ru';
+  settings_factory::$data['languages']['translate']['ru']->title = new \stdClass();
+  settings_factory::$data['languages']['translate']['ru']->title->en = 'Russian';
+  settings_factory::$data['languages']['translate']['ru']->title->native = 'Русский';
   settings_factory::$data['translate']['translate'] = new \stdClass();
   settings_factory::$data['translate']['translate']->ru['User profile (%%_context_user_mail-2)'] = 'Профиль пользователя (%%_context_user_mail-2)';
   settings_factory::$data['translate']['translate']->ru['Edit profile (%%_context_user_mail-2)'] = 'Редактировать профиль (%%_context_user_mail-2)';
