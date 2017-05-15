@@ -456,7 +456,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['translate']->ru['Edit profile'] = 'Редактировать профиль';
   settings_factory::$data['translate']['translate']->ru['edit'] = 'изменить';
   settings_factory::$data['translate']['translate']->ru['Front page'] = 'Главная страница';
-  settings_factory::$data['translate']['translate']->ru['Generation time'] = 'Время генерации';
+  settings_factory::$data['translate']['translate']->ru['Total time'] = 'Всего времени';
   settings_factory::$data['translate']['translate']->ru['Hello %%_user_email'] = 'Привет %%_user_email';
   settings_factory::$data['translate']['translate']->ru['Home'] = 'Дом';
   settings_factory::$data['translate']['translate']->ru['Init calls'] = 'Инициализирующие вызовы';
