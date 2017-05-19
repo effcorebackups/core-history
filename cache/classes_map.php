@@ -52,11 +52,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\files_factory']->classname = 'files_factory';
   cache_factory::$data['classes_map']['effectivecore\files_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\files_factory']->file = 'modules/core/classes/gl--factory--files.php';
-  cache_factory::$data['classes_map']['effectivecore\messages_factory'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\messages_factory']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\messages_factory']->classname = 'messages_factory';
-  cache_factory::$data['classes_map']['effectivecore\messages_factory']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\messages_factory']->file = 'modules/core/classes/gl--factory--messages.php';
+  cache_factory::$data['classes_map']['effectivecore\message_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\message_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\message_factory']->classname = 'message_factory';
+  cache_factory::$data['classes_map']['effectivecore\message_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\message_factory']->file = 'modules/core/classes/gl--factory--message.php';
   cache_factory::$data['classes_map']['effectivecore\timer_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\timer_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\timer_factory']->classname = 'timer_factory';
