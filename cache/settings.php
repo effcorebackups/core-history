@@ -379,10 +379,6 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['events']['page']->on_init['init_page'] = new \stdClass();
   settings_factory::$data['events']['page']->on_init['init_page']->handler = '\\effectivecore\\modules\\page\\events_module_factory::on_init';
   settings_factory::$data['events']['page']->on_init['init_page']->weight = 0;
-  settings_factory::$data['events']['storage'] = new \stdClass();
-  settings_factory::$data['events']['storage']->on_init['init_storage'] = new \stdClass();
-  settings_factory::$data['events']['storage']->on_init['init_storage']->handler = '\\effectivecore\\modules\\storage\\events_module_factory::on_init';
-  settings_factory::$data['events']['storage']->on_init['init_storage']->weight = -90;
   settings_factory::$data['events']['tree'] = new \stdClass();
   settings_factory::$data['events']['tree']->on_init['init_tree'] = new \stdClass();
   settings_factory::$data['events']['tree']->on_init['init_tree']->handler = '\\effectivecore\\modules\\tree\\events_module_factory::on_init';
