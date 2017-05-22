@@ -137,6 +137,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\markup']->classname = 'markup';
   cache_factory::$data['classes_map']['effectivecore\markup']->parents['node'] = 'node';
   cache_factory::$data['classes_map']['effectivecore\markup']->file = 'modules/page/classes/pattern--markup.php';
+  cache_factory::$data['classes_map']['effectivecore\page'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\page']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\page']->classname = 'page';
+  cache_factory::$data['classes_map']['effectivecore\page']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\page']->file = 'modules/page/classes/pattern--page.php';
   cache_factory::$data['classes_map']['effectivecore\pager'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\pager']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\pager']->classname = 'pager';
