@@ -102,11 +102,6 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\message']->classname = 'message';
   cache_factory::$data['classes_map']['effectivecore\message']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\message']->file = 'modules/core/classes/pattern--message.php';
-  cache_factory::$data['classes_map']['effectivecore\message_set'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\message_set']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\message_set']->classname = 'message_set';
-  cache_factory::$data['classes_map']['effectivecore\message_set']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\message_set']->file = 'modules/core/classes/pattern--message_set.php';
   cache_factory::$data['classes_map']['effectivecore\node'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\node']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\node']->classname = 'node';
@@ -121,7 +116,7 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\modules\page\events_module_factory']->namespace = 'effectivecore\\modules\\page';
   cache_factory::$data['classes_map']['effectivecore\modules\page\events_module_factory']->classname = 'events_module_factory';
   cache_factory::$data['classes_map']['effectivecore\modules\page\events_module_factory']->parents['effectivecore\events_module_factory'] = 'effectivecore\\events_module_factory';
-  cache_factory::$data['classes_map']['effectivecore\modules\page\events_module_factory']->file = 'modules/page/classes/gl--factory--events_module.php';
+  cache_factory::$data['classes_map']['effectivecore\modules\page\events_module_factory']->file = 'modules/page/classes/factory--events_module.php';
   cache_factory::$data['classes_map']['effectivecore\modules\page\page_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\modules\page\page_factory']->namespace = 'effectivecore\\modules\\page';
   cache_factory::$data['classes_map']['effectivecore\modules\page\page_factory']->classname = 'page_factory';

@@ -107,9 +107,6 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['pages']['page']['page_n']->styles['style_console']->media = 'all';
   settings_factory::$data['pages']['page']['page_n']->scripts['script_page'] = new \stdClass();
   settings_factory::$data['pages']['page']['page_n']->scripts['script_page']->file = 'misc/script.js';
-  settings_factory::$data['pages']['page']['page_n']->content['all_messages'] = new \effectivecore\message_set();
-  settings_factory::$data['pages']['page']['page_n']->content['all_messages']->type = 'messages';
-  settings_factory::$data['pages']['page']['page_n']->content['all_messages']->region = 'messages';
   settings_factory::$data['pages']['tree']['page_n'] = new \stdClass();
   settings_factory::$data['pages']['tree']['page_n']->url = new \stdClass();
   settings_factory::$data['pages']['tree']['page_n']->url->match = '%.*%';
