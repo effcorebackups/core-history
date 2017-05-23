@@ -467,8 +467,8 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['misc']['page']['misc_page_n']->styles['style_console'] = new \stdClass();
   settings_factory::$data['misc']['page']['misc_page_n']->styles['style_console']->file = 'misc/console.css';
   settings_factory::$data['misc']['page']['misc_page_n']->styles['style_console']->media = 'all';
-  settings_factory::$data['misc']['page']['misc_page_n']->scripts['script_page'] = new \stdClass();
-  settings_factory::$data['misc']['page']['misc_page_n']->scripts['script_page']->file = 'misc/script.js';
+  settings_factory::$data['misc']['page']['misc_page_n']->script['script_page'] = new \stdClass();
+  settings_factory::$data['misc']['page']['misc_page_n']->script['script_page']->file = 'misc/script.js';
   settings_factory::$data['misc']['tree']['misc_page_n'] = new \stdClass();
   settings_factory::$data['misc']['tree']['misc_page_n']->url = new \stdClass();
   settings_factory::$data['misc']['tree']['misc_page_n']->url->match = '%.*%';
