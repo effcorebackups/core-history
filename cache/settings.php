@@ -8,10 +8,11 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['file_types']['core']['css'] = new \stdClass();
   settings_factory::$data['file_types']['core']['css']->mime = 'text/css';
   settings_factory::$data['file_types']['core']['css']->use_tokens = 1;
-  settings_factory::$data['file_types']['core']['js'] = new \stdClass();
-  settings_factory::$data['file_types']['core']['js']->mime = 'text/javascript';
   settings_factory::$data['file_types']['core']['svg'] = new \stdClass();
   settings_factory::$data['file_types']['core']['svg']->mime = 'image/svg+xml';
+  settings_factory::$data['file_types']['core']['svg']->use_tokens = 1;
+  settings_factory::$data['file_types']['core']['js'] = new \stdClass();
+  settings_factory::$data['file_types']['core']['js']->mime = 'text/javascript';
   settings_factory::$data['file_types']['core']['gif'] = new \stdClass();
   settings_factory::$data['file_types']['core']['gif']->mime = 'image/gif';
   settings_factory::$data['file_types']['core']['jpg'] = new \stdClass();
