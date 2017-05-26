@@ -495,7 +495,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['templates']['tree']['tree_item'] = 'templates/template--tree_item.html';
   settings_factory::$data['templates']['tree']['tree_item_self'] = 'templates/template--tree_item_self.html';
   settings_factory::$data['templates']['tree']['tree_item_children'] = 'templates/template--tree_item_children.html';
-  settings_factory::$data['storages']['storage']['storage_db_main'] = new \effectivecore\storage_pdo_instance();
+  settings_factory::$data['storages']['storage']['storage_db_main'] = new \effectivecore\storage_instance_pdo();
   settings_factory::$data['storages']['storage']['storage_db_main']->id = 'db_main';
   settings_factory::$data['storages']['storage']['storage_db_main']->connection = null;
   settings_factory::$data['storages']['storage']['storage_db_main']->directory_name = 'effectivecore';
@@ -505,7 +505,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['storages']['storage']['storage_db_main']->driver = 'mysql';
   settings_factory::$data['storages']['storage']['storage_db_main']->is_init = false;
   settings_factory::$data['storages']['storage']['storage_db_main']->queries = [];
-  settings_factory::$data['storages']['storage']['storage_settings'] = new \effectivecore\storage_settings_instance();
+  settings_factory::$data['storages']['storage']['storage_settings'] = new \effectivecore\storage_instance_s();
   settings_factory::$data['storages']['storage']['storage_settings']->id = 'settings';
   settings_factory::$data['languages']['translate']['ru'] = new \stdClass();
   settings_factory::$data['languages']['translate']['ru']->code = 'ru';
