@@ -37,6 +37,11 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\console_factory']->classname = 'console_factory';
   cache_factory::$data['classes_map']['effectivecore\console_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\console_factory']->file = 'modules/core/classes/gl--factory--console.php';
+  cache_factory::$data['classes_map']['effectivecore\diagram_factory'] = new \stdClass();
+  cache_factory::$data['classes_map']['effectivecore\diagram_factory']->namespace = 'effectivecore';
+  cache_factory::$data['classes_map']['effectivecore\diagram_factory']->classname = 'diagram_factory';
+  cache_factory::$data['classes_map']['effectivecore\diagram_factory']->parents = [];
+  cache_factory::$data['classes_map']['effectivecore\diagram_factory']->file = 'modules/core/classes/gl--factory--diagram.php';
   cache_factory::$data['classes_map']['effectivecore\entity_factory'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\entity_factory']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\entity_factory']->classname = 'entity_factory';
