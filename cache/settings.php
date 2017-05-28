@@ -518,6 +518,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['translate']->ru['Delete profile (%%_context_user_mail-4)?'] = 'Удалить профиль (%%_context_user_mail-4)?';
   settings_factory::$data['translate']['translate']->ru['always_enabled'] = 'всегда_вкл';
   settings_factory::$data['translate']['translate']->ru['enabled'] = 'вкл.';
+  settings_factory::$data['translate']['translate']->ru['Execute plan'] = 'План выполнения';
   settings_factory::$data['translate']['translate']->ru['disabled'] = 'выкл.';
   settings_factory::$data['translate']['translate']->ru['Page'] = 'Страница';
   settings_factory::$data['translate']['translate']->ru['Core'] = 'Ядро';
@@ -525,7 +526,8 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['translate']->ru['Group'] = 'Группа';
   settings_factory::$data['translate']['translate']->ru['Storage'] = 'Хранилище';
   settings_factory::$data['translate']['translate']->ru['Translate'] = 'Перевод';
-  settings_factory::$data['translate']['translate']->ru['Tree'] = 'Дерево  ';
+  settings_factory::$data['translate']['translate']->ru['Tree'] = 'Дерево';
+  settings_factory::$data['translate']['translate']->ru['Total load'] = 'Общая загрука';
   settings_factory::$data['translate']['translate']->ru['Actions'] = 'Действия';
   settings_factory::$data['translate']['translate']->ru['Administer'] = 'Администрирование';
   settings_factory::$data['translate']['translate']->ru['Administrators'] = 'Администраторы';
@@ -547,6 +549,7 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['translate']->ru['Installation'] = 'Установка';
   settings_factory::$data['translate']['translate']->ru['Is always on'] = 'Всегда включен';
   settings_factory::$data['translate']['translate']->ru['Is embed'] = 'Встроенный';
+  settings_factory::$data['translate']['translate']->ru['Information'] = 'Информация';
   settings_factory::$data['translate']['translate']->ru['Autoload'] = 'Автозагрузка';
   settings_factory::$data['translate']['translate']->ru['login'] = 'вход';
   settings_factory::$data['translate']['translate']->ru['Login'] = 'Вход';
