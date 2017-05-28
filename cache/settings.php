@@ -468,9 +468,6 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['misc']['page']['misc_page_n']->styles['style_console'] = new \stdClass();
   settings_factory::$data['misc']['page']['misc_page_n']->styles['style_console']->file = 'misc/console.css';
   settings_factory::$data['misc']['page']['misc_page_n']->styles['style_console']->media = 'all';
-  settings_factory::$data['misc']['page']['misc_page_n']->styles['style_diagram'] = new \stdClass();
-  settings_factory::$data['misc']['page']['misc_page_n']->styles['style_diagram']->file = 'misc/diagram.css';
-  settings_factory::$data['misc']['page']['misc_page_n']->styles['style_diagram']->media = 'all';
   settings_factory::$data['misc']['page']['misc_page_n']->script['script_page'] = new \stdClass();
   settings_factory::$data['misc']['page']['misc_page_n']->script['script_page']->file = 'misc/script.js';
   settings_factory::$data['misc']['tree']['misc_page_n'] = new \stdClass();
@@ -593,10 +590,10 @@ namespace effectivecore { # settings_factory::$data[type][scope]...
   settings_factory::$data['translate']['translate']->ru['Version'] = 'Версия';
   settings_factory::$data['translate']['translate']->ru['view'] = 'просмотреть';
   settings_factory::$data['translate']['translate']->ru['Yes'] = 'Да';
-  settings_factory::$data['tokens']['tree']['nav_bg_color'] = new \stdClass();
-  settings_factory::$data['tokens']['tree']['nav_bg_color']->match = '%%_nav_bg_color';
-  settings_factory::$data['tokens']['tree']['nav_bg_color']->type = 'text';
-  settings_factory::$data['tokens']['tree']['nav_bg_color']->value = '#216ce4';
+  settings_factory::$data['tokens']['tree']['main_bg_color'] = new \stdClass();
+  settings_factory::$data['tokens']['tree']['main_bg_color']->match = '%%_main_bg_color';
+  settings_factory::$data['tokens']['tree']['main_bg_color']->type = 'text';
+  settings_factory::$data['tokens']['tree']['main_bg_color']->value = '#216ce4';
   settings_factory::$data['tokens']['user']['user_id'] = new \stdClass();
   settings_factory::$data['tokens']['user']['user_id']->match = '%%_user_id';
   settings_factory::$data['tokens']['user']['user_id']->type = 'code';
