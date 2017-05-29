@@ -552,7 +552,7 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['translate']['translate']->ru['Is always on'] = 'Всегда включен';
   settings::$data['translate']['translate']->ru['Is embed'] = 'Встроенный';
   settings::$data['translate']['translate']->ru['Information'] = 'Информация';
-  settings::$data['translate']['translate']->ru['Autoload'] = 'Автозагрузка';
+  settings::$data['translate']['translate']->ru['Load'] = 'Загрузка';
   settings::$data['translate']['translate']->ru['login'] = 'вход';
   settings::$data['translate']['translate']->ru['Login'] = 'Вход';
   settings::$data['translate']['translate']->ru['Logout from the system'] = 'Выйти из системы';
