@@ -84,10 +84,6 @@ namespace effectivecore { # settings::$data[type][scope]...
   settings::$data['pages']['core']['page_front']->content['block_wellcome']->region = 'c_1_1';
   settings::$data['pages']['core']['page_front']->content['block_wellcome']->type = 'text';
   settings::$data['pages']['core']['page_front']->content['block_wellcome']->content = 'Wellcome to our site!';
-  settings::$data['pages']['core']['page_front']->content['block_copyright'] = new \stdClass();
-  settings::$data['pages']['core']['page_front']->content['block_copyright']->region = 'f_1_1';
-  settings::$data['pages']['core']['page_front']->content['block_copyright']->type = 'text';
-  settings::$data['pages']['core']['page_front']->content['block_copyright']->content = 'Copyright © 2017 RysMax';
   settings::$data['pages']['core']['page_install'] = new \effectivecore\page();
   settings::$data['pages']['core']['page_install']->title = 'Installation';
   settings::$data['pages']['core']['page_install']->url = new \stdClass();
