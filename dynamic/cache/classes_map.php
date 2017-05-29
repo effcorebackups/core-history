@@ -187,11 +187,6 @@ namespace effectivecore { # cache for classes_map
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->classname = 'storage_factory';
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->parents = [];
   cache_factory::$data['classes_map']['effectivecore\modules\storage\storage_factory']->file = 'modules/storage/classes/factory--storage.php';
-  cache_factory::$data['classes_map']['effectivecore\settings_factory'] = new \stdClass();
-  cache_factory::$data['classes_map']['effectivecore\settings_factory']->namespace = 'effectivecore';
-  cache_factory::$data['classes_map']['effectivecore\settings_factory']->classname = 'settings_factory';
-  cache_factory::$data['classes_map']['effectivecore\settings_factory']->parents = [];
-  cache_factory::$data['classes_map']['effectivecore\settings_factory']->file = 'modules/storage/classes/gl--factory--settings.php';
   cache_factory::$data['classes_map']['effectivecore\storage_instance_pdo'] = new \stdClass();
   cache_factory::$data['classes_map']['effectivecore\storage_instance_pdo']->namespace = 'effectivecore';
   cache_factory::$data['classes_map']['effectivecore\storage_instance_pdo']->classname = 'storage_instance_pdo';
